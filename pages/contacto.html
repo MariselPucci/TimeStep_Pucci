@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
+        <title>Instituto Time Step</title>
+        <link rel="shortcut icon" href="../images/favicon_timestep.ico">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+        
+    </head>
+
+    <body class="gridBoxPages">
+        <header class="nav">
+            <a href="../index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
+
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <label for="menu" class="nav__label">
+                <img src="../images/menu.svg" class="nav__img" alt="menu">
+            </label>
+
+            <nav class="nav__box">
+                <ul class="nav__menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="instituto.html">INSTITUTO</a></li>
+                    <li><a href="staff.html">STAFF</a> </li>
+                    <li><a href="clases.html">CLASES</a>  
+                    <li><a href="horarios.html">HORARIOS</a> </li>
+                    <li><a href="contacto.html">CONTACTO</a></li>  
+                </ul>
+            </nav> 
+        </header>
+
+        <div class="boxFondoChico">
+            <h1 class="boxFondoChico__titulo">CONTACTO</h1>
+        </div>  
+    
+        <main>
+            <div class="flexConteiner">
+                <div class="ubicacion">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.499289468907!2d-58.479074885172416!3d-34.61682088045609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9efaf30d7ff%3A0x84986d938fdf600a!2sAv.%20Nazca%201463%2C%20C1416ASD%20CABA!5e0!3m2!1ses-419!2sar!4v1650945751616!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <div class="datosContacto">  
+                   <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - Capital Federal - Argentina</span>
+                   <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>  <span>+54-11-549800</span>
+                    <img src="../images/icono_email.png" alt="Email"><span>timestep@gmail.com</span>
+                    <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a><span>instagram.com/timestep</span>
+                   <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a> <span>Instituto Time Step</span>
+                </div>
+            </div>
+
+            <div class="formulario">
+                    <form action="enviar.php" class="form" method="get" enctype="text/plain">
+
+                        <div class="form__header">
+                            <h2 class="form__title">E<span>scribinos!</span></h2>
+                        </div>
+                    
+                        <label for="nombre" class="form__label">Nombre:</label> 
+                        <input type="text" class="form__input" name="nombre" placeholder="Ingrese su nombre" required/> 
+                           
+                        <label for="apellido" class="form__label">Apellido:</label> 
+                        <input type="text" class="form__input" name="apellido" placeholder="Ingrese su apellido" required> 
+                         
+                        <label for="email" class="form__label"> Email:</label>
+                        <input type="email" class="form__input"  name="email" placeholder="Ingrese su email" required>
+                    
+                        <label for="comenrarios" class="form__label"> Mensaje: </label>
+                        <textarea name="Comentarios" class="form__textarea"  id="Comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
+                      
+                        <input type="submit" class="btnSubmit" value="Enviar"/>
+            
+                     </form> 
+            </div> 
+               
+        </main>
+       
+       <!-- Inicio de footer-->
+       <footer id="footer">
+
+        <a href="../index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
+
+        <ul class="footerRedes">
+            <li><a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a></li>
+            <li> <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a></li>
+        </ul>  
+    </footer>  
+      
+    </body>
+</html>

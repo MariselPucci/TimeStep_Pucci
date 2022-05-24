@@ -1,0 +1,542 @@
+* {
+    padding:0;
+    margin:0; 
+    box-sizing: border-box;
+    font-family: 'Gudea', sans-serif;
+    }
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-size: 1em;
+    background: #b0b4b4;
+  }  
+
+     
+
+/* estructura layout con grid area pagina index*/
+body {
+    display: grid;
+    grid-template-areas: 
+    "menu" 
+    "fondo"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "redes";
+}
+
+.nav {
+    grid-area: menu;
+}
+
+.boxFondo {
+    grid-area: fondo;
+}
+
+.box1 {
+    grid-area: section1;
+    background: #ac3973;
+    margin: 20px 0;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.box2{
+    grid-area: section2;
+   /* background: orange; */
+}
+
+
+.box3{
+    grid-area: section3;
+    /* background: blue; */
+}
+
+
+.box4 {
+    grid-area: section4;
+    /* background: rgb(212, 0, 255); */
+}
+
+footer {
+    grid-area: redes;
+    background: black;
+}
+
+
+/* adaptacion de imagenes */
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* estilos a box2 y box3 texto e imagenes pagina index */
+.box2__texto, .box3__texto {
+    background: #b0b4b4;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
+
+.box2__img, .box3__img {
+    background:#b0b4b4;
+    padding: 0 30px 30px 30px;
+    text-align: center;
+}
+
+
+/* separacion de secciones box2 y box3 pagina index */
+.box3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+ /* inicio barra navegacion mobile first*/
+
+.nav {
+    background: black;
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    top: 0;
+    left: 0; 
+    z-index: 100;
+}
+
+
+ .nav__logo {
+    font-weight: 900;
+    padding: 20px 30px;
+    display: inline-block;
+  
+}
+
+.nav__logo h2 {
+    font-size: 1.6em;
+    float: left;
+}
+
+.nav__input {
+    display: none;/* oculto el checkbox */
+    float: right; 
+}
+
+
+.nav__label {
+    float: right;
+    cursor: pointer;
+    margin: 25px;  
+}
+
+.nav__img {
+    font-size: 40px;
+
+}
+
+.nav__box {
+   position: absolute;
+   top: 80px;
+   left: 0;
+   width: 100%;
+   height: calc(100vh- 80px);
+   background: rgba(0,0,0,.6);
+   transition: all 0.5s;
+   transform: translateX(-100%);
+}
+
+.nav__menu li {
+    list-style: none;
+}
+
+.nav__menu li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    text-align: center;
+}
+
+.nav__menu li a, .nav__logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav__menu li a:hover {
+    background: rgba(172,57,115,.7);
+
+    color: black;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.nav__input:checked ~ .nav__box {
+    transform: translateX(0%);
+}
+
+ 
+/* imagen pagina index con titulo */
+
+.boxFondo {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("../images/fondo_1.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;   
+  
+}
+
+.boxFondo__titulo { 
+    background: linear-gradient(to right, #ac3973, #ffdb4d);
+    padding: 13px;
+    width: 100%;
+    margin-top: 600px;  
+    text-align: center;
+    font-family:'Libre Barcode 128 Text', cursive;
+    font-size: 2.5em;
+}
+
+
+
+/* estilos botones */
+button {
+    background-color: #ffdb4d;
+    padding: 5px ; 
+    border-radius: 3px; 
+    transition: 0.5s; 
+}
+
+button a{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+button:hover{
+    background:#a55a7f;
+    transition: 0.5s;
+}
+
+button a:hover{
+    background:#a55a7f;
+    transition: 0.5s;
+}
+
+
+
+/* estilos titulos de secciones h2  */
+
+.box1__texto h2, .box2__texto h2, .box3__texto h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+} 
+
+/* estilos de parrafos de secciones */
+
+p {
+    text-align: justify;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+}
+
+
+/* estilo box 4 index - Ponete en contacto*/
+
+.box4{
+    background: linear-gradient(to right, #ac3973, #ffdb4d);
+    padding: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.box4 h2 a {
+    text-decoration: none;
+    color: black;
+    font-family:'Libre Barcode 128 Text', cursive;
+    font-size: 1.7em;
+}
+
+
+/* footer */
+
+#footer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#footer .footerRedes li {
+    list-style: none; 
+    padding: 10px; 
+}
+
+#footer .footerRedes {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* estructura layout con grid area pagina contacto */
+
+.gridBoxPages {
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "fondo"
+        "main"
+        "redes";
+    }
+
+    .nav {
+        grid-template: menu;
+    }
+
+    .boxFondo {
+        grid-template: fondo;
+    }
+
+main {
+    grid-template: main;
+}
+
+#footer {
+    grid-template: footer;
+}
+
+/* estilos imagen chica contenedor titulo de pagina */
+
+.boxFondoChico {
+    height: 450px;
+    width: 100%;
+    background-image: url("../images/fondo_1.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.boxFondoChico__titulo {
+        background: linear-gradient(to right, #ac3973, #ffdb4d);
+        padding: 13px;
+        width: 100%;
+        margin-top: 320px;  
+        text-align: center;
+        font-family:'Libre Barcode 128 Text', cursive;
+        font-size: 2.5em;
+    }
+    
+/* estilos contenedor plano ubicacion + datos contacto */
+
+.flexConteiner {
+    padding: 50px 50px 0 50px;
+    background: #ac3973;
+}
+
+.datosContacto {
+    display: grid;
+    grid-template-columns: 50px 2fr;
+    grid-template-rows: 50px  50px 50px 50px 50px;
+    margin-top: 30px;
+}
+
+.datosContacto span {
+    padding: 10px;
+}
+
+ /*  estilos formulario contacto */
+.formulario {
+    position: relative;
+    margin: 30px;
+
+}
+
+.formulario .form .form__header .form__title {
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.formulario .form .form__header .form__title span {
+    color: #fff;
+}
+
+.formulario .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 35px 35px;
+
+}
+
+.formulario .form .form__label {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.formulario .form .form__input, .form__textarea {
+    background: rgba(0,0,0,.6);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.formulario .form .form__textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.formulario .form .btnSubmit {
+    width: 100%;
+    outline: none;
+    background: #a55a7f;
+    font-size: 16px;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.formulario .form .btnSubmit:hover {
+    background: #ac3973;
+}
+
+
+/* pagina horarios */
+
+.boxHorario {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+}
+
+.flexConteiner.novedades {
+    background-color: #b0b4b4;
+    padding: 30px 20px 50px 20px;
+}
+
+.flexConteiner.novedades .imagen {
+    padding: 0px 20px 20px 20px;
+}
+
+
+/* pagina clases */
+
+.flexConteiner.clases {
+    margin: 30px 30px;
+    padding: 0;
+    background: #b0b4b4;
+}
+
+.flexConteiner.clases.uno {
+    margin-bottom: 0;
+}
+.flexConteiner.clases.dos {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flexConteiner.clases.tres {
+    margin-top: 0;
+}
+.flexConteiner.clases .imagen {
+    padding: 30px
+}
+
+
+/* pagina staff */
+
+.flexConteiner.staff.uno {
+    margin: 0 20px 0 20px;
+    background: #b0b4b4;
+}
+
+.flexConteiner.staff.dos {
+    margin: 0px 20px 20px 20px;
+    background: #b0b4b4;
+    padding-top: 0;
+}
+
+
+/* pagina instituto */ 
+
+.imagenGrupal {
+    display: none;
+    margin: 30px;
+}
+
+.box1.instituto {
+    background: #b0b4b4;
+}
+
+.flexConteiner.instituto.uno {
+   background: linear-gradient(to right, #ac3973, #ffdb4d);
+   margin: 20px 0;
+   padding: 0;
+  
+}
+
+.flexConteiner.instituto.uno .itemFlex p {
+    text-align:  center ;
+    padding: 20px;
+}
+
+.flexConteiner.instituto.tres {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.flexConteiner.instituto.tres .itemFlex {
+    height: 300px;
+    padding: 20px;
+    margin: 0;
+    border: none;
+    background: #ac3973;
+}
+
+.flexConteiner.instituto.tres .itemFlex.video {
+    height: 500px;
+}
+
+.flexConteiner.instituto.dos .itemFlex .imagen.dos{
+    padding: 20px 0;
+}
+
+.flexConteiner.instituto.dos .itemFlex .imagen.tres {
+    padding: 0 0 20px 0;
+}
+
+.flexConteiner.instituto.dos {
+    background: #b0b4b4;
+}
+
+
+
+
+
+
