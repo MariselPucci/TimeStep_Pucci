@@ -173,7 +173,14 @@
 
 
 
+/* adaptacion pagina horarios a desktop 1024px*/
 
+@media (min-width: 1024px) {
+    .flexConteiner.novedades .imagen:hover {
+        transform: scale(1.15);
+    }
+    
+}
 
 /* adaptacion pagina clases a desktop 1024px */
 @media (min-width: 1024px) {
@@ -185,7 +192,9 @@
         gap: 20px;
  }
 
-
+ .flexConteiner.clases .imagen:hover {
+     transform: scale(1.3);
+ }
 }
 
 /* adaptacion pagina staff a desktop 1024px */
@@ -236,6 +245,11 @@
         border: none;
         background:#b0b4b4;
     }
+
+    .flexConteiner.instituto.dos .itemFlex:hover {
+        transform: scale(1.2);
+    }
+
 
     .flexConteiner.instituto.tres {
         padding: 30px;
