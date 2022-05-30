@@ -7,95 +7,164 @@
         <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
         <title>Instituto Time Step</title>
         <link rel="shortcut icon" href="images/favicon_timestep.ico">
+
         <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/responsive.css"> 
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">    
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
- </head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>  
     
-
     <body>
-            <header class="nav">
-                <a href="index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
+        <!-- Inicio barra de navegacion -->   
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-custom p-2">
 
-                <input type="checkbox" id="menu" class="nav__input">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">Time Step</a>
 
-                <label for="menu" class="nav__label">
-                    <img src="images/menu.svg" class="nav__img" alt="menu">
-                </label>
+                        <button id="menu-buttom" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-6"></span>
+                        </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
 
-                <nav class="nav__box">
-			        <ul class="nav__menu">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="pages/instituto.html">INSTITUTO</a></li>
-                        <li><a href="pages/staff.html">STAFF</a> </li>
-                        <li><a href="pages/clases.html">CLASES</a>  
-                        <li><a href="pages/horarios.html">HORARIOS</a> </li>
-                        <li><a href="pages/contacto.html">CONTACTO</a></li>  
-			        </ul>
-		        </nav> 
-            </header>
+                    <ul id="menu" class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pages/instituto.html">Instituto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/staff.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/horarios.html">Horario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>       
+        </header>
 
+            <section class="banner">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2 class="animate__animated animate__backInLeft">Arte en movimiento</h2>
+                            <p class="animate__animated animate__backInLeft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium odit qui sequi totam molestiae repudiandae deserunt recusandae aut minima, illum, beatae optio magni! Cum, dolorem facere! Eos, earum deleniti!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    <main class="container-fluid">
+
+            <!-- seccion sobre el instituto -->
+            <section id="intro" class="w-75 mx-auto text-center pt-5">
+                <h2>Conoce Time Step</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum et nulla error perferendis facilis fugiat soluta, beatae eligendi! Rem quae possimus ipsum magni vero nobis ipsa dignissimos voluptatum adipisci.</p>
+               <a href="pages/instituto.html" class="btn-neon">Descubrí más!</a>
+            </section>
+     
  
-            <div class="boxFondo">
-                    <h1 class="boxFondo__titulo animate__animated animate__backInLeft">ARTE EN MOVIMIENTO</h1>
-            </div>  
-        
-            <section class="box1"> <!--contenedorSeccion primera Seccion de presentacion del Instituto- acerca de nosotros -->
-                <div class="box1__texto">
-                    <h2> Sobre el Instituto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, qui laudantium voluptate, beatae laboriosam distinctio perferendis et quod, facere excepturi molestiae quae. Blanditiis illo et eaque, quam ut natus eveniet.</p>
-                    <button> <a href="pages/instituto.html">Descubrí más!</a></button>
-                </div>
-            </section>
-         
-                   
-            <section class="box2"><!-- Seccion de clases esto despues lo voy a alinear uno al lado del otro con flex-->
-                <div class="box2__texto">
-                    <h2> Vení a bailar con nosotros</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, qui laudantium voluptate, beatae laboriosam distinctio perferendis et quod, facere excepturi molestiae quae. Blanditiis illo et eaque, quam ut natus eveniet. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, incidunt. Repellat nam debitis quasi sint dolor dignissimos aliquam tenetur, nemo et. Repellendus impedit, officiis ex amet asperiores deserunt aliquid nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, deserunt! Temporibus nostrum dicta corporis tempore sint eos at rerum, hic fugiat assumenda similique est voluptatum! Aut pariatur aspernatur repellat esse! lore</p>
-                    <button> <a href="pages/clases.html">Clases</a></button>   
-                </div>
+            <div class="container secciones">
+                <div class="row g-3">
+                    <!-- seccion clases -->
+                    <section class="col-12 col-md-6 col-lg-4">   
+                        <div class="card shadow">
+                            <div class="inner">
+                                <img src="images/inicio_clases.jpg" class="card-img-top" alt="Clases">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Baila con nosotros</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
+                                <a href="pages/clases.html" class="btn-neon sobreBlanco">Clases</a>
+                            </div>
+                        </div>
+                    </section> 
 
-                <div class="box2__img">
-                    <img src="images/inicio_clases.jpg" class="imagen" alt="Clases">
+                    <!-- seccion staff -->
+                    <section class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow">
+                            <div class="inner">
+                                <img src="images/inicio_staff.jpg" class="card-img-top" alt="Staff">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class=" card-title">Staff</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
+                                <a href="pages/staff.html" class="btn-neon sobreBlanco">Conocenos</a>
+                            </div>
+                        </div> 
+                    </section> 
+
+                    <!-- seccion novedades-->
+                     <section class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow">
+                            <div class="inner">
+                                <img src="images/novedades_4.jpg" class="card-img-top" alt="Novedades">
+                             </div>   
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Horarios - Novedades</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
+                                <a href="pages/horarios.html" class="btn-neon sobreBlanco">Ver mas</a>
+                            </div>
+                        </div>
+                    </section> 
                 </div>
-            </section>
-      
-            <section class="box3"> 
-                <div class="box3__texto">
-                    <h2> Nuestro Staff</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, qui laudantium voluptate, beatae laboriosam distinctio perferendis et quod, facere excepturi molestiae quae. Blanditiis illo et eaque, quam ut natus eveniet. lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero repellendus quae, laborum ex at odit consequatur alias fugiat maiores dicta veniam expedita. Reprehenderit, hic corrupti. Dolores perspiciatis facilis cum. Corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est corrupti repellendus, veniam, excepturi ad explicabo dolor ullam porro iusto velit perspiciatis? Recusandae quam enim </p>
-                    <button> <a href="pages/staff.html">Conocenos</a></button>  
-                </div>   
-                <div class="box3__img">
-                    <img src="images/inicio_staff.jpg" class="imagen" alt="Staff">
-                </div>  
-            </section>
+            </div>
+        </main>  
+
+
        
-            <section class="box4">  <!--  Seccion ponete en contacto -->
+            <!-- <section class="box4">   Seccion ponete en contacto 
                 <h2><a href="pages/contacto.html">Ponete en contacto</h2></a> 
-            </section>
+            </section>-->
 
 
         <!-- Inicio de footer-->
-        <footer id="footer">
-           
-                    <a href="index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
-                
-                    <ul class="footerRedes">
-                        <li><a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="images/icono_instagram.png" alt="Instagram"></a></li>
-                        <li><a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="images/icono_facebook.png" alt="Facebook"></a></li>
-                        <li><a href="https://www.tiktok.com" target="_blank"> <img src="images/icono_tiktok.png" alt="Tik Tok"></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="images/icono_whatsapp.png" alt="WhatsApp"></a></li>
-                    </ul>
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="left-col">
+                        <a class="navbar-brand footer" href="index.html">Time Step</a>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="images/icono_instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="images/icono_facebook.png" alt="Facebook">
+                            <a href="https://www.tiktok.com" target="_blank"> <img src="images/icono_tiktok.png" alt="Tik Tok"></a>
+                            <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="images/icono_whatsapp.png" alt="WhatsApp"></a>
+                        </div>
+                        <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
+                    </div>
+
+                     <div class="right-col">
+                        <h3>Newsletter</h3>
+                        <div class="border"></div>
+                        <p>Dejanos tu email y no te pierdas las novedades</p>
+                        <form action="" class="contact">
+                            <input type="email" name="" class="txtb" placeholder="Ingresa tu email"> 
+                            <input type="submit" class="btn-footer" value="Enviar" name="">
+                        </form>
+                    </div>
+                </div>
+            </div>
 	    </footer>
 
-    </body><!-- fin div grid area -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    </body>
 
 </html>

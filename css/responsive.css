@@ -1,8 +1,92 @@
-/* adaptacion a tablet a partir de 768px a 1023px prueba pagina index*/
-   
+/*adaptacion a tablet */
+@media (min-width:577px) and (max-width:991px) {
+    .row .col-sm-6 {
+        width: 100%;
+    }
+}
+
+/* ========================================================================================= */
+/* adaptacion mobile-tablet hasta 991px */
+@media (max-width: 991px) {
+    .nav-item a {
+        text-align: center;
+        background: #fff;
+   }    
+    
+    .banner {
+        padding: 270px 0;
+        max-height: 39rem; /* ver si esta ok o hay que modificarlo */
+    }
+
+    .bannerTitulo {
+        padding: 180px 0;
+        max-height: 400px;
+    }
+
+    .banner::before, .bannerTitulo:before{
+        max-height: 39rem;
+    }
+
+    .banner h2, .bannerTitulo h2 {
+        font-size: 1.8em;
+        margin-top: 90px;
+    } 
+
+    .banner p {
+        font-size: 1.1em;
+    }
+
+    #intro h2{
+        font-size: 1.6em;
+        padding: 0.5rem 0;
+    }
+    
+    #intro p {
+        font-size: 0.9em;
+        line-height: 1.4em;
+    }
+    
+    #intro .btn-neon {
+        padding: 5px 10px;
+        letter-spacing: 2px;
+    }
+
+    .footer-container {
+        max-width: 600px;
+    }
+    .right-col {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .left-col {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ========================================================================================= */
+
+/* adaptacion mobile hasta 768px*/
+
+@media (max-width: 768px) {
+    .btn-footer {
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .staffBlanco {
+        color: #fff;
+    }
+}
+
+
+/* adaptacion a tablet a partir de 768px a 1023px prueba pagina index
 @media (min-width:768px) {
 
-    /* adaptacion de dos secciones en columnas */
+    /* adaptacion de dos secciones en columnas 
     body {
         grid-template: 
         "menu menu"
@@ -20,15 +104,14 @@
         margin: 20px 20px 20px 20px;
         position: relative;
     }
-   }
+   }*/
 
 
-/* adptacion a desktop 1024px pagina index*/
+/* adptacion a desktop 1024px pagina index
+@media (min-width: 1024px){*/
 
-@media (min-width: 1024px){
 
-    /* adptacion de las secciones en filas para luego aplicar flexbox */
-    body{
+    /* adptacion de las secciones en filas para luego aplicar flexbox 
         grid-template: 
         "menu" 
         "fondo"
@@ -37,38 +120,14 @@
         "section3"
         "section4"
         "redes";
-    }
+    } 
 
-    /* adaptacion menu navegacion*/
-    .nav__box {
-        position: static;
-        width: auto;
-        height: auto;
-        transform: translateX(0%);
-        float: right;
-    }
-    
-    .nav__box .nav__menu {
-        display: flex;
-        margin-top: 15px;
-        margin-right: 40px; 
-    }
+    #menu {
+       margin-left: auto; 
+    body{
+     }*/
 
-    .nav__label {
-        display: none;
-    }
-
-    .nav__menu li a {
-        border-bottom: none;
-    }
-
-    .nav__logo {
-        float: left;
-        font-size: 1.2em;
-    }
-
-
-    /*adaptacion de titulo en imagen principal index*/
+    /*adaptacion de titulo en imagen principal index
     .boxFondo__titulo { 
         margin-top: 460px;  
         font-size:3.5em;
@@ -88,9 +147,9 @@
     .box1__texto {
         width: 800px;
         margin: auto;
-    }
+    }*/
  
-    /* ajuste de secciones texto al lado de imagen en index */
+    /* ajuste de secciones texto al lado de imagen en index 
     .box2, .box3 {
         display: flex;
         flex-direction: row;
@@ -119,9 +178,9 @@
 
     .box4 {
         font-size: 1.5em;
-    }
+    }*/
 
-    /* adaptacion footer a desktop*/
+    /* adaptacion footer a desktop
     #footer {
         display: inline-block;
         width: 100%;
@@ -139,8 +198,8 @@
         margin: 13px; 
     }
 }
-
-/* adaptacion de pagina contacto a desktop a partir de 1024px */
+*/
+/* adaptacion de pagina contacto a desktop a partir de 1024px 
 @media (min-width:1024px) {
 
     .boxFondoChico {
@@ -169,20 +228,20 @@
         padding-bottom: 50px;
     }
         
-}
+}*/
 
 
 
-/* adaptacion pagina horarios a desktop 1024px*/
+/* adaptacion pagina horarios a desktop 1024px
 
 @media (min-width: 1024px) {
     .flexConteiner.novedades .imagen:hover {
         transform: scale(1.15);
     }
     
-}
+}*/
 
-/* adaptacion pagina clases a desktop 1024px */
+/* adaptacion pagina clases a desktop 1024px 
 @media (min-width: 1024px) {
 
 .flexConteiner.clases {
@@ -195,9 +254,9 @@
  .flexConteiner.clases .imagen:hover {
      transform: scale(1.3);
  }
-}
+}*/
 
-/* adaptacion pagina staff a desktop 1024px */
+/* adaptacion pagina staff a desktop 1024px 
 @media (min-width: 1024px) {
     .flexConteiner.staff {
         margin: 0;
@@ -211,9 +270,9 @@
         margin: 10px ;
         background: #ac3973;
     }
-}
+}*/
 
-/* adaptacion pagina instituto a desktop 1024px */
+/* adaptacion pagina instituto a desktop 1024px
 @media (min-width: 1024px) {
 
     .imagenGrupal {
@@ -267,7 +326,7 @@
         width: 700px;
     }
 
-}
+} */
 
 
 

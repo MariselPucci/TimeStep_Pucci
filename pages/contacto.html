@@ -6,97 +6,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
         <title>Instituto Time Step</title>
-        <link rel="shortcut icon" href="../images/favicon_timestep.ico">
+        <link rel="shortcut icon" href="images/favicon_timestep.ico">
+
         <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/responsive.css"> 
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">    
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
 
-    <body class="gridBoxPages">
-        <header class="nav">
-            <a href="../index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-            <input type="checkbox" id="menu" class="nav__input">
+    </head>  
+    
+    <body>
+        <!-- Inicio barra de navegacion -->   
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-custom p-2">
 
-            <label for="menu" class="nav__label">
-                <img src="../images/menu.svg" class="nav__img" alt="menu">
-            </label>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">Time Step</a>
 
-            <nav class="nav__box">
-                <ul class="nav__menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="instituto.html">INSTITUTO</a></li>
-                    <li><a href="staff.html">STAFF</a> </li>
-                    <li><a href="clases.html">CLASES</a>  
-                    <li><a href="horarios.html">HORARIOS</a> </li>
-                    <li><a href="contacto.html">CONTACTO</a></li>  
-                </ul>
-            </nav> 
+                        <button id="menu-buttom" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-6"></span>
+                        </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
+
+                    <ul id="menu" class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="instituto.html">Instituto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="staff.html">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="horarios.html">Horario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>       
         </header>
 
-        <div class="boxFondoChico">
-            <h1 class="boxFondoChico__titulo animate__animated animate__backInLeft">CONTACTO</h1>
-        </div>  
-    
-        <main>
-            <div class="flexConteiner">
-                <div class="ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.499289468907!2d-58.479074885172416!3d-34.61682088045609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9efaf30d7ff%3A0x84986d938fdf600a!2sAv.%20Nazca%201463%2C%20C1416ASD%20CABA!5e0!3m2!1ses-419!2sar!4v1650945751616!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-        
-                <div class="datosContacto">  
-                   <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - Capital Federal - Argentina</span>
-                   <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>  <span>+54-11-549800</span>
-                    <img src="../images/icono_email.png" alt="Email"><span>timestep@gmail.com</span>
-                    <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a><span>instagram.com/timestep</span>
-                   <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a> <span>Instituto Time Step</span>
+      
+        <section class="bannerTitulo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2 class="animate__animated animate__backInLeft">Ponete en contacto</h2>
+                    </div>
                 </div>
             </div>
-
-            <div class="formulario">
-                    <form action="enviar.php" class="form" method="get" enctype="text/plain">
-
-                        <div class="form__header">
-                            <h2 class="form__title">E<span>scribinos!</span></h2>
-                        </div>
-                    
-                        <label for="nombre" class="form__label">Nombre:</label> 
-                        <input type="text" class="form__input" name="nombre" placeholder="Ingrese su nombre" required/> 
-                           
-                        <label for="apellido" class="form__label">Apellido:</label> 
-                        <input type="text" class="form__input" name="apellido" placeholder="Ingrese su apellido" required> 
-                         
-                        <label for="email" class="form__label"> Email:</label>
-                        <input type="email" class="form__input"  name="email" placeholder="Ingrese su email" required>
-                    
-                        <label for="comenrarios" class="form__label"> Mensaje: </label>
-                        <textarea name="Comentarios" class="form__textarea"  id="Comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
-                      
-                        <input type="submit" class="btnSubmit" value="Enviar"/>
+        </section>
             
-                     </form> 
-            </div> 
-               
-        </main>
-       
-       <!-- Inicio de footer-->
-       <footer id="footer">
+        <main class="container-fluid">
 
-        <a href="../index.html" class="nav__logo"><h2 >TIME STEP</h2></a>
+        </main>  
 
-        <ul class="footerRedes">
-            <li><a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-            <li><a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a></li>
-            <li> <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a></li>
-        </ul>  
-    </footer>  
-      
+
+        <!-- Inicio de footer-->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="left-col">
+                        <a class="navbar-brand footer" href="../index.html">Time Step</a>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook">
+                            <a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a>
+                            <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
+                        </div>
+                        <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
+                    </div>
+
+                     <div class="right-col">
+                        <h3>Newsletter</h3>
+                        <div class="border"></div>
+                        <p>Dejanos tu email y no te pierdas las novedades</p>
+                        <form action="" class="contact">
+                            <input type="email" name="" class="txtb" placeholder="Ingresa tu email"> 
+                            <input type="submit" class="btn-footer" value="Enviar" name="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+	    </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     </body>
+
 </html>
