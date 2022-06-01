@@ -40,6 +40,7 @@ header{
     position: absolute;
     z-index: 10;
     width: 100%;
+    background: rgba(0,0,0,.8);
 }
 
 .bg-custom { 
@@ -47,7 +48,16 @@ header{
 }
 
 .navbar{
+    margin-top: 0;
     padding: 20px 0;
+}
+
+#menu-buttom.navbar-toggler {
+   color: transparent
+}
+
+#menu-buttom.navbar-toggler .navbar-toggler-icon {
+    background: #ddd;
 }
 
 #menu {
@@ -58,7 +68,7 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2em;
-    color: #171815;
+    color: #fff;
 }
 
 .nav-item {
@@ -68,14 +78,23 @@ header{
 }
 
 .nav-item a{
-    color: #171815;
+    color: #fff;
 }
 
-.navbar-nav .nav-item .nav-link:hover, 
-.navbar-nav .nav-item .nav-link.active {
-    background: #171815;
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover{
+    text-shadow:  0 0 10px fuchsia,
+    0 0 20px fuchsia,
+    0 0 40px fuchsia,
+    0 0 80px fuchsia,
+    0 0 120px fuchsia; ;
     color: #fff;
-    transition: 0.5s;
+
+}
+
+#logo:hover {
+    color: #fff;
 }
 
 
@@ -101,7 +120,7 @@ header{
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,1) 95%);
+    background: linear-gradient(rgba(255,255,255,.1), rgba(0,0,0,1) 95%);
 }
 
 .banner h2 {
@@ -140,7 +159,6 @@ header{
 
 #intro h2{
     font-size: 1.8em;
-    border-top: 1px solid #fff;
     padding: 0.7rem 0;
     text-transform: uppercase;
     color: #fff;
@@ -235,6 +253,7 @@ footer {
 .navbar-brand.footer {
     font-size: 2em;
     text-transform: uppercase;
+    font-weight: bold ;
 }
 
 .redes {
@@ -342,9 +361,21 @@ footer {
                   0 0 80px fuchsia,
                   0 0 120px fuchsia;
 }
+
   
 /* ===================================================================================== */
-/* estilos seccion staff*/
+/* estilos pagina instituto*/
+.datos {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.img-responsive.grupal {
+    width: 100%;
+}
+
+/* ===================================================================================== */
+/* estilos pagina staff*/
 .staff {
     padding-top: 100px;
 }
@@ -414,4 +445,141 @@ footer {
 
 #box-img:hover ul {
     opacity: 1;
+}
+
+/* ===================================================================================== */
+/* estilos pagina clases*/
+.clases {
+    padding-top: 100px;
+}
+.container .img-box.light img {
+    width: 100%;
+
+}
+
+.container .img-box.light img:hover {
+    transform: scale(1.05);
+}
+
+
+.container-fluid a {
+    text-decoration: none;
+}
+
+.container-fluid.titulo {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+.tituloAnimado {
+    margin-top: 20px;
+    margin-bottom:0;
+    padding: 30px 0;
+    padding-top: 40px;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(23,24,21,1) 90%);
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px fuchsia,
+                  0 0 20px fuchsia,
+                  0 0 40px fuchsia,
+                  0 0 80px fuchsia,
+                  0 0 120px fuchsia;
+}
+/* ===================================================================================== */
+/* estilos pagina horario*/
+
+.container .img-grande{
+    width: 100%;
+    min-height: auto;
+}
+
+.novedades #box-img:hover {
+    transform: scale(1.05);
+}
+
+/* ===================================================================================== */
+/* estilos pagina contacto*/
+
+
+.formulario .form .form__header .form__title {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.4em;
+}
+
+
+.formulario .form {
+    background: rgba(0,0,0,.6);
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    padding: 35px 25px;
+
+}
+
+.formulario .form .form__label {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.formulario .form .form__input, .form__textarea {
+    background: rgba(0,0,0,.6);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.formulario .form .form__textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.formulario .form .btnSubmit {
+    width: 100%;
+    outline: none;
+    background: #444;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0;
+    cursor: pointer; 
+}
+
+.formulario .form .btnSubmit:hover {
+    background: fuchsia;
+    text-shadow: 0 0 10px fuchsia,
+                  0 0 20px fuchsia,
+                  0 0 40px fuchsia,
+                  0 0 80px fuchsia,
+                  0 0 120px fuchsia;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    grid-template-rows: 50px  50px 50px 50px 50px;
+}
+
+.contacto span {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.container.maps iframe{
+    filter: invert(1) grayscale(1);
 }
