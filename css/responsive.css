@@ -1,12 +1,4 @@
-/*adaptacion a tablet */
-@media (min-width:577px) and (max-width:991px) {
-    .row .col-sm-6 {
-        width: 100%;
-    }
-}
-
-/* ========================================================================================= */
-/* adaptacion mobile-tablet hasta 991px */
+/* adaptacion  hasta 991px */
 @media (max-width: 991px) {
     .nav-item a {
         text-align: center;
@@ -67,12 +59,26 @@
         font-size: 1.8em;
         margin-top: 20px;
     }
+
+    .light-box {
+        width: auto;
+        height: 80vh;
+    
+    }
+    
+    .light-box img {
+        width: 100%;
+        height: auto;
+    }
+    
+
+    
 }
 
 
 /* ========================================================================================= */
 
-/* adaptacion mobile y tablet hasta 768px*/
+/* adaptacion hasta 768px*/
 
 @media (max-width: 768px) {
     .btn-footer {
@@ -104,8 +110,23 @@
      .img-responsive.grupal {
          display: none;
      }
+
+  .light-box {
+    width: auto;
+    height: 60vh;
+
 }
 
+    .light-box img {
+    width: 100%;
+    height: auto;
+}
 
+.close  {
+    top: 20px;
+    right: 20px;
+}
+
+}
 
 
