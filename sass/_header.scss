@@ -37,11 +37,11 @@ header {
                 }
                 #menu-button {
                     &.navbar-toggler{
-                        color: transparent;
-                    }
-                    .navbar-toggler-icon {
+                        color: transparent; 
+                        .navbar-toggler-icon {
                         background: $colorPrincipal;    
                     }
+                    }                  
                 }
                 
                 #menu {
@@ -60,8 +60,7 @@ header {
                             }
                         }
                     }
-                }   
-                     
+                }           
             }
         }
     }

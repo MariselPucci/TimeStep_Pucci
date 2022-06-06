@@ -1,0 +1,82 @@
+/* ===================================================================================== */
+/* estilos main pagina contacto*/
+
+main {
+    background: $fondoMain; 
+    height: 100%;
+    position: relative;
+
+    .container {
+    &.formulario {
+        .form {
+            background: rgba(0,0,0,.6);
+            width: 95%;
+            max-width: 800px;
+            margin: auto;
+            padding: 35px 25px;
+            & .form__header {
+            .form__title {
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 1.4em;  
+            }
+            }
+            & .form__label {
+                display: block;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                position: relative;
+            }
+            & .form__input, & .form__textarea {
+                background: rgba(0,0,0,.6);
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgba(255,255,255,.5);
+                width: 100%;
+                padding: 12px;
+                border-radius: 2px;
+                font-size: 14px;
+                color: #fff; 
+            } 
+            & .form__textarea {
+                resize: vertical;
+                max-height: 150px;
+                min-height: 50px;
+            }
+            .btnSubmit {
+                width: 100%;
+                outline: none;
+                background: #444;
+                font-size: 16px;
+                border: none;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 15px 0;
+                cursor: pointer;
+                &:hover {
+                    background: $colorSecundario;
+                    box-shadow: $sombra-colorSecundario;
+                }
+                
+            }
+        }   
+    }
+    & .contacto {
+        display: grid;
+        grid-template-columns: 30px 2fr;
+        grid-template-rows: 50px  50px 50px 50px 50px;
+        span {
+            padding: 10px;
+            font-size: 1em; 
+        }
+    }
+    & .maps {
+        iframe {
+            filter: invert(1) grayscale(1);  
+        }
+    }
+    }
+}

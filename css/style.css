@@ -39,7 +39,7 @@ header .container .navbar .container-fluid #menu-button.navbar-toggler {
   color: transparent;
 }
 
-header .container .navbar .container-fluid #menu-button .navbar-toggler-icon {
+header .container .navbar .container-fluid #menu-button.navbar-toggler .navbar-toggler-icon {
   background: #fff;
 }
 
@@ -184,11 +184,20 @@ footer .container .footer-container .right-col .contact .btn-footer:hover {
   color: #fff;
 }
 
-/* estilos pagina contacto*/
+/* ===================================================================================== */
+/* estilos main pagina contacto*/
 main {
   background: linear-gradient(black, white 90%);
   height: 100%;
   position: relative;
+}
+
+main .container.formulario .form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  padding: 35px 25px;
 }
 
 main .container.formulario .form .form__header .form__title {
@@ -199,84 +208,104 @@ main .container.formulario .form .form__header .form__title {
   font-size: 1.4em;
 }
 
-/*  
-.formulario .form .form__header .form__title {
-    color: #fff;
-    text-transform: uppercase;
+main .container.formulario .form .form__label {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+main .container.formulario .form .form__input, main .container.formulario .form .form__textarea {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+main .container.formulario .form .form__textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+main .container.formulario .form .btnSubmit {
+  width: 100%;
+  outline: none;
+  background: #444;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+main .container.formulario .form .btnSubmit:hover {
+  background: fuchsia;
+  box-shadow: 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 40px fuchsia, 0 0 80px fuchsia, 0 0 120px fuchsia;
+}
+
+main .container .contacto {
+  display: grid;
+  grid-template-columns: 30px 2fr;
+  grid-template-rows: 50px  50px 50px 50px 50px;
+}
+
+main .container .contacto span {
+  padding: 10px;
+  font-size: 1em;
+}
+
+main .container .maps iframe {
+  filter: invert(1) grayscale(1);
+}
+
+/* adaptacion  hasta 991px */
+@media (max-width: 991px) {
+  .navbar .container-fluid #menu .nav-item a {
     text-align: center;
-    padding: 20px 0;
-    font-size: 1.4em;
-}
-
-
-.formulario .form {
-    background: rgba(0,0,0,.6);
-    width: 95%;
-    max-width: 800px;
-    margin: auto;
-    padding: 35px 25px;
-
-}
-
-.formulario .form .form__label {
-    display: block;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-}
-
-.formulario .form .form__input, .form__textarea {
-    background: rgba(0,0,0,.6);
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    background: transparent;
+  }
+  .bannerTitulo {
+    padding: 180px 0;
+    max-height: 400px;
+  }
+  .bannerTitulo:before {
+    max-height: 39rem;
+  }
+  .bannerTitulo h2 {
+    font-size: 1.8em;
+    margin-top: 90px;
+  }
+  .container .footer-container {
+    max-width: 600px;
+  }
+  .container .footer-container .right-col {
     width: 100%;
-    padding: 12px;
-    border-radius: 2px;
-    font-size: 14px;
-    color: #fff;
-}
-
-.formulario .form .form__textarea {
-    resize: vertical;
-    max-height: 150px;
-    min-height: 50px;
-}
-
-.formulario .form .btnSubmit {
+    margin-bottom: 60px;
+  }
+  .container .footer-container .left-col {
     width: 100%;
-    outline: none;
-    background: #444;
-    font-size: 16px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 15px 0;
-    cursor: pointer; 
+    text-align: center;
+  }
 }
 
-.formulario .form .btnSubmit:hover {
-    background: fuchsia;
-    text-shadow: 0 0 10px fuchsia,
-                  0 0 20px fuchsia,
-                  0 0 40px fuchsia,
-                  0 0 80px fuchsia,
-                  0 0 120px fuchsia;
+/* ========================================================================================= */
+/* adaptacion hasta 768px*/
+@media (max-width: 768px) {
+  .container .footer-container .right-col .btn-footer {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .container-fluid #contact-page {
+    display: block !important;
+  }
 }
-
-.contacto {
-    display: grid;
-    grid-template-columns: 30px 2fr;
-    grid-template-rows: 50px  50px 50px 50px 50px;
-}
-
-.contacto span {
-    padding: 10px;
-    font-size: 1em;
-}
-
-.container.maps iframe{
-    filter: invert(1) grayscale(1);
-}*/
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+/* adaptacion  hasta 991px */
+@media (max-width: 991px) {
+    .navbar {
+        .container-fluid {
+            #menu {
+                .nav-item {
+                    & a {
+                        text-align: center;
+                         background: transparent;
+                    }
+                }
+            }           
+        }
+    }
+    .bannerTitulo {
+        padding: 180px 0;
+        max-height: 400px;
+        &:before {
+             max-height: 39rem;
+        }
+        & h2 {
+            font-size: 1.8em;
+            margin-top: 90px;  
+        }
+    }
+    .container {
+        .footer-container {
+            max-width: 600px; 
+            .right-col {
+                width: 100%;
+                margin-bottom: 60px;
+            }   
+            .left-col {
+                width: 100%;
+                text-align: center;
+            }     
+        }   
+    }   
+}
+
+
+/* ========================================================================================= */
+/* adaptacion hasta 768px*/
+
+@media (max-width: 768px) {
+
+    .container {
+        .footer-container {
+            .right-col {
+               .btn-footer {
+                    margin: 0;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }    
+        }   
+    }   
+    
+    .container-fluid {
+        #contact-page {
+         display: block!important; 
+        }
+    }   
+}
+
