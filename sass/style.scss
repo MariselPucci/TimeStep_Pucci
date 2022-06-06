@@ -1,0 +1,113 @@
+@import "vars";
+@import "header";
+@import "bannerPages";
+@import "footer";
+
+/* estilos pagina contacto*/
+
+main {
+    background: $fondoMain; 
+    height: 100%;
+    position: relative;
+
+    .container {
+    &.formulario {
+        .form {
+            & .form__header {
+            .form__title {
+                    color: $colorPrincipal;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 1.4em;  
+            }
+            }
+        }
+        }
+    }   
+}
+
+/*  
+.formulario .form .form__header .form__title {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.4em;
+}
+
+
+.formulario .form {
+    background: rgba(0,0,0,.6);
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    padding: 35px 25px;
+
+}
+
+.formulario .form .form__label {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.formulario .form .form__input, .form__textarea {
+    background: rgba(0,0,0,.6);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.formulario .form .form__textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.formulario .form .btnSubmit {
+    width: 100%;
+    outline: none;
+    background: #444;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0;
+    cursor: pointer; 
+}
+
+.formulario .form .btnSubmit:hover {
+    background: fuchsia;
+    text-shadow: 0 0 10px fuchsia,
+                  0 0 20px fuchsia,
+                  0 0 40px fuchsia,
+                  0 0 80px fuchsia,
+                  0 0 120px fuchsia;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    grid-template-rows: 50px  50px 50px 50px 50px;
+}
+
+.contacto span {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.container.maps iframe{
+    filter: invert(1) grayscale(1);
+}*/
+
+
+
+

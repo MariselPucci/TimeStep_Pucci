@@ -1,0 +1,25 @@
+//variables 
+
+$fuentePrincipal: 'Gudea', sans-serif;
+
+$colorPrincipal: #fff;
+
+$fondoHeader: rgba(0,0,0,.8);
+
+$fontSizeBrand: 2em;
+
+$fontSizeTituloPpal: 2.8em;
+
+$fondoTituloPagina: url(../images/fondo_2.jpg);
+
+$fondoMain: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1) 90%);
+
+$fondoFooter: #171815;
+
+$colorSecundario: fuchsia;
+
+$sombra-colorSecundario:  0 0 10px $colorSecundario,
+0 0 20px $colorSecundario,
+0 0 40px $colorSecundario,
+0 0 80px $colorSecundario,
+0 0 120px $colorSecundario; 

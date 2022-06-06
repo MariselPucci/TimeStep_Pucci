@@ -1,0 +1,83 @@
+/* ===================================================================================== */
+/* estilos footer*/
+
+footer {
+    background-color: $fondoFooter;
+    padding: 90px 0;
+    color: $colorPrincipal;
+    .footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    }
+    .container {
+        .footer-container {
+            .navbar-brand.footer {
+                font-size: $fontSizeBrand;
+                text-transform: uppercase;
+                font-weight: bold ; 
+            }
+            .redes {
+                margin: 20px 0;
+                & a {
+                    margin-right: 25px;  
+                }
+            }
+            .rights-text {
+                color: #888;
+            }
+            .right-col {
+                h3{
+                 font-size: 26px;   
+                } 
+                .border {
+                    width: 130px;
+                    height: 3px;
+                    background: #fff;
+                }
+                .contact {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .txtb {
+                        flex: 1;
+                        padding: 18px 40px;
+                        font: {
+                            size: 16px;
+                            weight: 700;
+                        }
+                        color: black;
+                        background: #ddd;
+                        border: none;
+                        outline: none;
+                        min-width: 260px;
+                    }
+                    .btn-footer {
+                        padding: 18px 40px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        color:$colorPrincipal;
+                        background: #444;
+                        border: none;
+                        outline: none;
+                        letter-spacing: 4px;
+                        overflow-y: hidden;
+                        transition: 0.2s; 
+                        cursor: pointer;
+                        &:hover {
+                            background: $colorSecundario;
+                            box-shadow: $sombra-colorSecundario;   
+                            color: $colorPrincipal;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+
