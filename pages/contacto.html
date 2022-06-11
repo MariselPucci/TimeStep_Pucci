@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
         <title>Instituto Time Step</title>
-        <link rel="shortcut icon" href="images/favicon_timestep.ico">
+        <link rel="shortcut icon" href="../images/favicon_timestep.ico">
 
         <link rel="stylesheet" href="../css/style.css"> 
 
@@ -60,36 +60,35 @@
             </div>       
         </header>
 
-        <section class="bannerTitulo">
+        <div class="bannerTitulo">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2 class="animate__animated animate__backInLeft">Contactanos</h2>
+                        <h1 class="animate__animated animate__backInLeft">Contactanos</h1>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
             
         <main class="container-fluid">
-            <section class="container-fluid">
-                <div id="contact-page" class="container d-flex w-100">
+            <section id="contact-page" class="container d-flex w-100">
                     <div class="container formulario pt-5 pb-5">
                         <form action="enviar.php" class="form" method="get" enctype="text/plain">
                             <div class="form__header">
-                                <h2 class="form__title"><span>Escribinos</span></h2>
+                                <h2 class="form__title"><strong>Escribinos</strong></h2>
                             </div>
                         
                             <label for="nombre" class="form__label">Nombre:</label> 
-                            <input type="text" class="form__input" name="nombre" placeholder="Ingrese su nombre" required/> 
+                            <input type="text" class="form__input" id="nombre" placeholder="Ingrese su nombre" required/> 
                                
                             <label for="apellido" class="form__label">Apellido:</label> 
-                            <input type="text" class="form__input" name="apellido" placeholder="Ingrese su apellido" required> 
+                            <input type="text" class="form__input" id="apellido" placeholder="Ingrese su apellido" required> 
                              
                             <label for="email" class="form__label"> Email:</label>
-                            <input type="email" class="form__input"  name="email" placeholder="Ingrese su email" required>
+                            <input type="email" class="form__input"  id="email" placeholder="Ingrese su email" required>
                         
-                            <label for="comenrarios" class="form__label"> Mensaje: </label>
-                            <textarea name="Comentarios" class="form__textarea"  id="Comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
+                            <label for="comentarios" class="form__label"> Mensaje: </label>
+                            <textarea name="Comentarios" class="form__textarea"  id="comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
                           
                             <input type="submit" class="btnSubmit btn-neon" value="Enviar"/>
                         </form> 
@@ -100,14 +99,13 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.499289468907!2d-58.479074885172416!3d-34.61682088045609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9efaf30d7ff%3A0x84986d938fdf600a!2sAv.%20Nazca%201463%2C%20C1416ASD%20CABA!5e0!3m2!1ses-419!2sar!4v1650945751616!5m2!1ses-419!2sar" width="100%" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="container contacto pt-2">
-                            <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - Capital Federal - Argentina</span>
+                            <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - CABA - Argentina</span>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>  <span>+54-11-549800</span>
                              <img src="../images/icono_email.png" alt="Email"><span>timestep@gmail.com</span>
                              <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a><span>instagram.com/timestep</span>
                             <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a> <span>Instituto Time Step</span>
                         </div>
                     </div>
-                </div>
             </section>
         </main>  
 
@@ -120,7 +118,7 @@
                         <a class="navbar-brand footer" href="../index.html">Time Step</a>
                         <div class="redes">
                             <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook">
+                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a>
                             <a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
                         </div>
@@ -132,8 +130,8 @@
                         <div class="border"></div>
                         <p>Dejanos tu email y no te pierdas las novedades</p>
                         <form action="enviar.php" class="contact">
-                            <input type="email" name="" class="txtb" placeholder="Ingresa tu email"> 
-                            <input type="submit" class="btn-footer" value="Enviar" name="">
+                            <input type="email" class="txtb" placeholder="Ingresa tu email"> 
+                            <input type="submit" class="btn-footer" value="Enviar">
                         </form>
                     </div>
                 </div>

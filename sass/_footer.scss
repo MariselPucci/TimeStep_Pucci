@@ -2,7 +2,7 @@
 /* estilos footer*/
 
 footer {
-    background-color: $fondoFooter;
+    background-color: $fondoSecundario;
     padding: 90px 0;
     color: $colorPrincipal;
     .footer-container {
@@ -55,7 +55,7 @@ footer {
                         background: #ddd;
                         border: none;
                         outline: none;
-                        min-width: 260px;
+                        min-width: 10px;
                     }
                     .btn-footer {
                         padding: 18px 40px;

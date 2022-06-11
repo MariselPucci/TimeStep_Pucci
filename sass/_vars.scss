@@ -1,20 +1,43 @@
-//variables 
+// Variables 
 
 $fuentePrincipal: 'Gudea', sans-serif;
 
+
+// Paleta colores
+
 $colorPrincipal: #fff;
 
-$fondoHeader: rgba(0,0,0,.8);
+$colorSecundario: #f4004f;
+
+$colorTerciario: #444;
+
+// Colores de fondos
+
+$fondoBase: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1) 90%);
+
+$fondoPrincipal: rgba(0,0,0,.8);
+
+$fondoSecundario: #171815;
+
+$fondoCard: #fff;
+
+
+// Tamaños de fuente
 
 $fontSizeBrand: 2em;
 
-$fontSizeTituloPpal: 2.8em;
+$fontSizeTituloPrincipal: 2.8em;
 
-$fondoMain: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1) 90%);
+$fontSizeTituloSecundario: 1.8em;
 
-$fondoFooter: #171815;
+$fontSizeParrafo: 1.2em;
 
-$colorSecundario: fuchsia;
+$smallText: 1em;
+
+$xsText: 0.8em;
+
+
+// Sombra texto
 
 $sombra-colorSecundario:  0 0 10px $colorSecundario,
 0 0 20px $colorSecundario,

@@ -18,7 +18,7 @@
         max-height: 39rem;
     }
 
-    .banner h2, .bannerTitulo h2 {
+    .banner h1, .bannerTitulo h1 {
         font-size: 1.8em;
         margin-top: 90px;
     } 

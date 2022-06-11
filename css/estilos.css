@@ -84,11 +84,11 @@ header{
 
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover{
-    text-shadow:  0 0 10px fuchsia,
-    0 0 20px fuchsia,
-    0 0 40px fuchsia,
-    0 0 80px fuchsia,
-    0 0 120px fuchsia; ;
+    text-shadow:  0 0 10px #f4004f,
+    0 0 20px #f4004f,
+    0 0 40px #f4004f,
+    0 0 80px #f4004f,
+    0 0 120px #f4004f;
     color: #fff;
 
 }
@@ -123,20 +123,20 @@ header{
     background: linear-gradient(rgba(255,255,255,.1), rgba(0,0,0,1) 95%);
 }
 
-.banner h2 {
+.banner h1 {
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    font-size: 2.8em;
+    font-size: 2.4em;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.1em;
-    text-shadow: 0 0 10px fuchsia,
-                  0 0 20px fuchsia,
-                  0 0 40px fuchsia,
-                  0 0 80px fuchsia,
-                  0 0 120px fuchsia;
+    text-shadow:  0 0 10px #f4004f,
+    0 0 20px #f4004f,
+    0 0 40px #f4004f,
+    0 0 80px #f4004f,
+    0 0 120px #f4004f;
 }
   
 .banner p {
@@ -185,10 +185,10 @@ header{
 }
   
 .btn-neon:hover{  
-    background: fuchsia;
-    box-shadow: 0 0 10px fuchsia, 
-    0 0 40px fuchsia, 
-    0 0 80px fuchsia;
+    background: #f4004f;
+    box-shadow: 0 0 10px #f4004f, 
+    0 0 40px #f4004f, 
+    0 0 80px #f4004f;
     color: #fff; 
 }
 
@@ -313,10 +313,10 @@ footer {
 
   
 .btn-footer:hover{  
-    background: fuchsia;
-    box-shadow: 0 0 10px fuchsia, 
-    0 0 40px fuchsia, 
-    0 0 80px fuchsia;
+    background: #f4004f;
+    box-shadow: 0 0 10px #f4004f, 
+    0 0 40px #f4004f, 
+    0 0 80px #f4004f;
     color: #fff; 
 }
 
@@ -346,20 +346,20 @@ footer {
     background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,1) 95%);
 }
 
-.bannerTitulo h2 {
+.bannerTitulo h1 {
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.1em;
-    text-shadow: 0 0 10px fuchsia,
-                  0 0 20px fuchsia,
-                  0 0 40px fuchsia,
-                  0 0 80px fuchsia,
-                  0 0 120px fuchsia;
+    text-shadow:  0 0 10px #f4004f,
+    0 0 20px #f4004f,
+    0 0 40px #f4004f,
+    0 0 80px #f4004f,
+    0 0 120px #f4004f;
 }
 
   
@@ -380,14 +380,14 @@ footer {
     padding-top: 100px;
 }
 
-#box-img img {
+#imagen-staff img {
     width: 100%;
 }
 .col-md-4.profile {
     margin-top: 25px;
 }
 
-#box-img {
+#imagen-staff {
     opacity: 1;
     display: block;
     position: relative;
@@ -408,7 +408,7 @@ footer {
 
 }
 
-#box-img:after {
+#imagen-staff:after {
     content: "";
     opacity: 0;
     background: rgba(0,0,0,.6);
@@ -419,7 +419,7 @@ footer {
     top: 0;
 }
 
-#box-img ul {
+#imagen-staff ul {
     margin: 0;
     padding: 20px 0;
     position: absolute;
@@ -431,7 +431,7 @@ footer {
     opacity: 0;
 }
 
-#box-img ul li {
+#imagen-staff ul li {
     width: 30px;
     height: 30px;
     margin: 3px;
@@ -439,12 +439,16 @@ footer {
     display: inline-block;
 }
 
-#box-img:hover:after {
+#imagen-staff:hover:after {
     opacity: 1;
 }
 
-#box-img:hover ul {
+#imagen-staff:hover ul {
     opacity: 1;
+}
+
+.staffBlanco {
+    color: #fff;
 }
 
 /* ===================================================================================== */
@@ -476,24 +480,24 @@ footer {
     margin-bottom:0;
     padding: 30px 0;
     padding-top: 40px;
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: bold;
     text-transform: uppercase;
     background: linear-gradient(rgba(255,255,255,0.1), rgba(23,24,21,1) 90%);
     color: #fff;
     letter-spacing: 0.1em;
-    text-shadow: 0 0 10px fuchsia,
-                  0 0 20px fuchsia,
-                  0 0 40px fuchsia,
-                  0 0 80px fuchsia,
-                  0 0 120px fuchsia;
+    text-shadow: 0 0 10px #f4004f,
+                  0 0 20px #f4004f,
+                  0 0 40px #f4004f,
+                  0 0 80px #f4004f,
+                  0 0 120px #f4004f;
 }
 
 /* galeria lightbox */
 
 .container.galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: auto;
     gap: 10px;
     padding: 40px 0;
@@ -521,7 +525,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.6);
+    background: rgba(0,0,0,.8);
     transition: transform .3s ease-in-out;
     width: 100%;
     height: 100vh;
@@ -546,7 +550,7 @@ footer {
     position: absolute;
     top: 40px;
     right: 40px;
-    background: #ac3973;
+    background: #f4004f;
     color: #fff;
     text-decoration: none;
     width: 40px;
@@ -558,7 +562,7 @@ footer {
 
 .next {
     display: block;
-    background:#ac3973; 
+    background:#f4004f; 
     color: #fff;
     height: 30px;
     width: 30px;
@@ -641,12 +645,12 @@ footer {
 }
 
 .formulario .form .btnSubmit:hover {
-    background: fuchsia;
-    text-shadow: 0 0 10px fuchsia,
-                  0 0 20px fuchsia,
-                  0 0 40px fuchsia,
-                  0 0 80px fuchsia,
-                  0 0 120px fuchsia;
+    background: #f4004f;
+    text-shadow:  0 0 10px #f4004f,
+    0 0 20px #f4004f,
+    0 0 40px #f4004f,
+    0 0 80px #f4004f,
+    0 0 120px #f4004f;
 }
 
 .contacto {

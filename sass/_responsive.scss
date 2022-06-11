@@ -18,7 +18,7 @@
         &:before {
              max-height: 39rem;
         }
-        & h2 {
+        & h1 {
             font-size: 1.8em;
             margin-top: 90px;  
         }
@@ -44,6 +44,18 @@
 
 @media (max-width: 768px) {
 
+    main {
+        .container {
+            & .contacto {
+                margin-top: 20px;
+                grid-template-rows: 60px 60px 60px 60px 60px;
+                span {
+                    font-size: 0.9em; 
+                }
+            }
+        }
+    }    
+
     .container {
         .footer-container {
             .right-col {
@@ -54,7 +66,7 @@
                 }
             }    
         }   
-    }   
+    } 
     
     .container-fluid {
         #contact-page {
