@@ -11,6 +11,8 @@ $colorSecundario: #f4004f;
 
 $colorTerciario: #444;
 
+$colorAuxiliar: #e0bf62;
+
 // Colores de fondos
 
 $fondoBase: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1) 90%);
@@ -44,4 +46,11 @@ $sombra-colorSecundario:  0 0 10px $colorSecundario,
 0 0 40px $colorSecundario,
 0 0 80px $colorSecundario,
 0 0 120px $colorSecundario; 
+
+$sombra-color:  0 0 10px $colorAuxiliar,
+0 0 20px $colorAuxiliar,
+0 0 40px $colorAuxiliar,
+0 0 80px $colorAuxiliar,
+0 0 120px $colorAuxiliar; 
+
 

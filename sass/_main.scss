@@ -1,45 +1,255 @@
+@import "vars";
+
+/* ===================================================================================== */
+/* estilos banner titulo home*/
+
+.banner {
+    position: relative;
+    background: url(../images/fondo_1.jpg);
+    height: 100vh;
+    padding: 250px 0 250px;
+    z-index: -20; 
+    background: {
+        size: cover;
+        position: center;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index:-20;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(255,255,255,.1), rgba(0,0,0,1) 95%);
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        font-size: $fontSizeTituloPrincipal;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $colorPrincipal;
+        letter-spacing: 0.1em;
+        text-shadow: $sombra-colorSecundario
+    }
+}
+
+
+/* ===================================================================================== */
+/* estilos seccion sobre el instituto pagina home*/
+
+main {
+    #intro {
+        background: transparent;
+        h2 {
+            font-size: $fondoSecundario;
+            padding: 0.7rem 0;
+            text-transform: uppercase;
+            color: $colorAuxiliar;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+    }  
+}
+
+/* ===================================================================================== */
+/* estilos parrafos - extend */
+
+.parrafo {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 2em;
+}
+
+.parrafo--amarillo {
+    @extend.parrafo;
+    color: #e0bf62;
+} 
+
+.parrafo--gris {
+    @extend.parrafo;
+    color: #171815;    
+}
+
+/* ===================================================================================== */
+/* estilos botones - mixin */
+
+@mixin boton($col,$bg) {
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    overflow-y: hidden;
+    transition: 0.2s;
+    color: $col;
+    background: $bg;
+}
+
+.btn-neon {
+  @include boton(#171815, #fff)
+}
+
+.btn-neon--dark {
+    @include boton(#000, #e0bf62)
+}
+
+@mixin sombra ($bg, $col){
+    background: $bg;
+    box-shadow:0 0 10px $col,
+    0 0 40px $col, 
+    0 0 80px $col;
+    color: #fff;
+}
+
+.btn-neon:hover {
+    @include sombra(#171815,#e0bf62)
+}
+
+.btn-neon--dark:hover {
+    @include sombra (#171815,#f4004f)
+}
+
+/* ===================================================================================== */
+/* estilos seccion clases pagina home*/
+
+.container.secciones .row.g-3{
+    margin-top: 8%;
+    margin-bottom: 10%;
+    padding-bottom: 20px;
+}
+
+.card-title {
+    text-transform: uppercase; 
+    font-size: 1.8em;
+    font-weight: 700; 
+    color: #444; 
+}
+
+.card-text {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #444;
+}
+
+.btn-neon.sobreBlanco {
+    color: #171815;
+}
+
+.btn-neon.sobreBlanco:hover {
+    color: #fff;
+}
+
+.card.shadow {
+    border-radius:0;
+    border: none;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+.container-fluid a {
+    text-decoration: none;
+}
+
+.tituloAnimado {
+    margin-top: 20px;
+    margin-bottom:0;
+    padding: 30px 0;
+    padding-top: 40px;
+    font-size: $fontSizeTituloSecundario;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(23,24,21,1) 90%);
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-shadow: $sombra-colorSecundario;
+}
+
+
+// Maps
+
+$colores: (
+    principal: $colorPrincipal,
+    secundario: $colorSecundario,
+    terciario: $colorTerciario,
+    auxiliar: $colorAuxiliar,
+    fondoBase: $fondoBase,
+    fondoPrincipal:$fondoPrincipal,
+    fondoSecundario: $fondoSecundario,
+    fondoCard: $fondoCard
+);
+
+$tamaños: (
+    grande:$fontSizeTituloPrincipal,
+    mediano: $fontSizeTituloSecundario,
+    normal:$fontSizeParrafo,
+    pequeño:$smallText,
+    xs:$xsText
+);
+
+
 /* ===================================================================================== */
 /* estilos main pagina contacto*/
 
 main {
-    background: $fondoBase; 
+    background: map-get($colores, fondoBase); 
     height: 100%;
     position: relative;
 
     .container {
     &.formulario {
         .form {
-            background: rgba(0,0,0,.6);
+            background: map-get($colores, terciario);
             width: 95%;
             max-width: 800px;
             margin: auto;
             padding: 35px 25px;
             & .form__header {
             .form__title {
-                    color: #fff;
+                    color: map-get($colores, principal);
                     text-transform: uppercase;
                     text-align: center;
                     padding: 20px 0;
-                    font-size: 1.4em;  
+                    font-size: map-get($tamaños, mediano);
+                    letter-spacing: 0.1em;
+                    text-shadow: $sombra-color;  
             }
             }
             & .form__label {
                 display: block;
-                color: #fff;
-                font-size: 16px;
+                color: map-get($colores, principal);
+                font-size: map-get($tamaños, pequeño);
                 font-weight: bold;
                 position: relative;
             }
             & .form__input, & .form__textarea {
-                background: rgba(0,0,0,.6);
+                background: map-get($colores, fondoPrincipal);
                 border: none;
                 outline: none;
                 border-bottom: 1px solid rgba(255,255,255,.5);
                 width: 100%;
                 padding: 12px;
                 border-radius: 2px;
-                font-size: 14px;
-                color: #fff; 
+                font-size: map-get($tamaños, xs);
+                color: map-get($colores, auxiliar); 
             } 
             & .form__textarea {
                 resize: vertical;
@@ -49,15 +259,16 @@ main {
             .btnSubmit {
                 width: 100%;
                 outline: none;
-                background: #444;
-                font-size: 16px;
+                background: map-get($colores, terciario);
+                font-size: map-get($tamaños, pequeño);
                 border: none;
-                color: #fff;
+                color: map-get($colores, principal);
                 text-transform: uppercase;
+                letter-spacing: 4px;
                 padding: 15px 0;
                 cursor: pointer;
                 &:hover {
-                    background: $colorSecundario;
+                    background: map-get($colores, fondoSecundario );
                     box-shadow: $sombra-colorSecundario;
                 }
                 
@@ -70,7 +281,7 @@ main {
         grid-template-rows: 50px  50px 50px 50px 50px;
         span {
             padding: 10px;
-            font-size: 1em; 
+            font-size: map-get($tamaños, pequeño); 
         }
     }
     & .maps {
