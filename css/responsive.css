@@ -23,7 +23,7 @@
         margin-top: 90px;
     } 
 
-    .banner p {
+    .banner .parrafo {
         font-size: 1.1em;
     }
 
@@ -32,7 +32,7 @@
         padding: 0.5rem 0;
     }
     
-    #intro p {
+    #intro .parrafo {
         font-size: 0.9em;
         line-height: 1.4em;
     }
@@ -88,10 +88,6 @@
         margin: 0;
         width: 100%;
         margin-top: 20px;
-    }
-
-    .staffBlanco {
-        color: #fff;
     }
 
     .map-wrapper {

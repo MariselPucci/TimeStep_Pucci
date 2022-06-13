@@ -222,7 +222,7 @@ footer .container .footer-container .right-col .contact .btn-footer:hover {
 }
 
 /* ===================================================================================== */
-/* estilos seccion sobre el instituto pagina home*/
+/* estilos secciones (instituto-clases-staff-horario) pagina home */
 main #intro {
   background: transparent;
 }
@@ -234,6 +234,61 @@ main #intro h2 {
   color: #e0bf62;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+
+main .container.secciones .row.g-3 {
+  margin-top: 8%;
+  margin-bottom: 10%;
+  padding-bottom: 20px;
+}
+
+main .container.secciones .row.g-3 section .card-shadow {
+  border-radius: 0;
+  border: none;
+}
+
+main .container.secciones .row.g-3 section .card-shadow .inner {
+  overflow: hidden;
+}
+
+main .container.secciones .row.g-3 section .card-shadow .inner .img {
+  transition: all 1.5s ease;
+}
+
+main .container.secciones .row.g-3 section .card-shadow .inner:hover {
+  transform: scale(1.5);
+}
+
+main .container.secciones .row.g-3 section .card-title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #444;
+}
+
+.container-fluid.titulo {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.container-fluid.titulo a {
+  text-decoration: none;
+}
+
+.container-fluid.titulo a .tituloAnimado {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 30px 0;
+  padding-top: 40px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), #171815 90%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
 }
 
 /* ===================================================================================== */
@@ -291,72 +346,6 @@ main #intro h2 {
   background: #171815;
   box-shadow: 0 0 10px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f;
   color: #fff;
-}
-
-/* ===================================================================================== */
-/* estilos seccion clases pagina home*/
-.container.secciones .row.g-3 {
-  margin-top: 8%;
-  margin-bottom: 10%;
-  padding-bottom: 20px;
-}
-
-.card-title {
-  text-transform: uppercase;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #444;
-}
-
-.card-text {
-  padding: 10px 20px;
-  font-size: 1.2em;
-  line-height: 2em;
-  color: #444;
-}
-
-.btn-neon.sobreBlanco {
-  color: #171815;
-}
-
-.btn-neon.sobreBlanco:hover {
-  color: #fff;
-}
-
-.card.shadow {
-  border-radius: 0;
-  border: none;
-}
-
-.inner {
-  overflow: hidden;
-}
-
-.inner img {
-  transition: all 1.5s ease;
-}
-
-.inner:hover img {
-  transform: scale(1.5);
-}
-
-.container-fluid a {
-  text-decoration: none;
-}
-
-.tituloAnimado {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 30px 0;
-  padding-top: 40px;
-  font-size: 1.8em;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), #171815 90%);
-  color: #fff;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
 }
 
 /* ===================================================================================== */
