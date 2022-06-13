@@ -332,8 +332,8 @@ main .container.secciones .row.g-3 section .card-title {
   letter-spacing: 4px;
   overflow-y: hidden;
   transition: 0.2s;
-  color: #000;
-  background: #e0bf62;
+  color: #fff;
+  background: #444;
 }
 
 .btn-neon:hover {

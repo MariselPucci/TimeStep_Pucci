@@ -152,7 +152,7 @@ main {
 }
 
 .btn-neon--dark {
-    @include boton(#000, #e0bf62)
+    @include boton(#fff, #444)
 }
 
 @mixin sombra ($bg, $col){
