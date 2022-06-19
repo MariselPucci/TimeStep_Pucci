@@ -1,3 +1,4 @@
+/* ========================================================================================= */
 /* adaptacion  hasta 991px */
 @media (max-width: 991px) {
     .navbar {
@@ -12,14 +13,22 @@
             }           
         }
     }
+
+    .banner {
+        padding: 270px 0;
+        max-height: 39rem; 
+        &:before {
+            max-height: 39rem;
+        }
+    }
     .bannerTitulo {
         padding: 180px 0;
         max-height: 400px;
         &:before {
-             max-height: 39rem;
+             max-height: 400px;
         }
         & h1 {
-            font-size: 1.8em;
+            font-size: $fontSizeTituloSecundario;
             margin-top: 90px;  
         }
     }
@@ -38,24 +47,138 @@
     }   
 }
 
-
 /* ========================================================================================= */
 /* adaptacion hasta 768px*/
 
 @media (max-width: 768px) {
 
+    /* Pagina index */
+    
+        .banner {
+            .container {
+                .row {
+                    #banner-text {
+                        h1 {
+                            font-size: 1.7em;
+                        }
+                        p {
+                            font-size: $smallText;
+                        }
+                    } 
+                }
+            } 
+        }
+ 
+    main {
+        #intro{
+            width: 100%!important;
+            h2 {
+                font-size: 1.4em;
+            }
+            p {
+                font-size: $smallText;
+                text-align: justify;
+            }
+        } 
+    }
+ 
+
+    /* Pagina instituto */
+    main {
+        .container {
+            .card-body {
+                &.instituto {
+                    h2 {
+                        font-size: 1.4em;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                    .datos {
+                        h5 {
+                            font-size: $smallText;
+                            font-weight: 700;
+                            text-align: center;  
+                        }
+                        p {
+                            font-size: $smallText;
+                            text-align: center;   
+                        }
+                        &:hover {
+                            text-shadow: $sombra-colorSecundario; 
+                        }
+                    }
+                }
+            }
+            .box-fondo {
+                padding-bottom: 0;
+                margin-bottom: 50px;
+                .container {
+                    &.video {
+                        padding-bottom: 0;
+                        p {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+            #carouselExampleFade {
+                display: none;
+            }
+            .container {
+                &.frase {
+                    display: none;
+                
+                }
+            }
+        }
+    }
+
+    /* Pagina clases */
+    main {
+        .container{
+            &.galeria {
+                a:hover img {
+                    filter: blur(0);
+                    transform: scale(1.03); 
+                    cursor: default; 
+                }
+            }
+        }
+        .light-box {
+            display: none;
+        }
+       
+    }
+
+  
+    /* Pagina contacto */
     main {
         .container {
             & .contacto {
                 margin-top: 20px;
                 grid-template-rows: 60px 60px 60px 60px 60px;
                 span {
-                    font-size: 0.9em; 
+                    font-size: $smallText; 
                 }
             }
         }
-    }    
-
+    }        
+    .container-fluid {
+        #contact-page {
+         display: block!important;
+            .container {
+                .form {
+                    .form__header {
+                        .form__title {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Footer */
     .container {
         .footer-container {
             .right-col {
@@ -66,12 +189,6 @@
                 }
             }    
         }   
-    } 
-    
-    .container-fluid {
-        #contact-page {
-         display: block!important; 
-        }
-    }   
+    }    
 }
 

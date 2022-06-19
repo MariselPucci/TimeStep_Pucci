@@ -11,28 +11,29 @@
   
         <link rel="shortcut icon" href="../images/favicon_timestep.ico">
 
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="stylesheet" href="../css/responsive.css"> 
+        <link rel="stylesheet" href="../css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     </head>  
     
     <body>
-        <!-- Inicio barra de navegacion -->   
-        <header>
+           <!-- Inicio barra de navegacion -->   
+           <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-custom p-2">
 
                     <div class="container-fluid">
                         <a id="logo" class="navbar-brand" href="../index.html">Time Step</a>
-                        <button id="menu-buttom" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+
+                        <button id="menu-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon fs-6"></span>
                         </button>
                         <div class="collapse navbar-collapse show" id="navbarDark">
@@ -51,7 +52,7 @@
                                     <a class="nav-link" href="clases.html">Clases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="horarios.html">Horario</a>
+                                    <a class="nav-link " href="horarios.html">Horario</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contacto.html">Contacto</a>
@@ -62,108 +63,186 @@
                 </nav>
             </div>       
         </header>
+
         <!-- Inicio banner titulo-->  
         <div class="bannerTitulo">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h1 class="animate__animated animate__backInLeft">Nuestro Staff</h1>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-6">
+                        <h1>Nuestro Staff</h1>
                     </div>
                 </div>
             </div>
         </div>
-
-            
+   
         <main class="container-fluid">
             <section class="staff container">
-                <div class="container row g-3">
-                    <div class="col-md-4 profile text-center">
+                <div class="container row g-3 mb-5">
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
                         <div id="imagen-staff" class="img-box">
-                            <img src="../images/staff_1.jpg" class="img-responsive" alt="Staf1">
+                            <img src="../images/staff_FlorPenas.jpg" class="img-responsive" alt="Flor Penas - Directora">
                                 <ul>
-                                   <li><a href="https://www.instagram.com/florpenas/?hl=es"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                   <li><a href="https://www.facebook.com/florenciacarlapenas"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                                   <li><a href="https://www.instagram.com/florpenas/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                   <li><a href="https://www.tiktok.com/@florpenas" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
                                 </ul>
                         </div>
                         <div class="staffBlanco">
                             <h2>Flor Penas</h2>
-                            <h3>Directora - Profesora - Bailarina</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
+                            <h3>Directora - Profesora</h3>
                         </div>
                     </div> 
 
-                    <div class="col-md-4 profile text-center">
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
                         <div id="imagen-staff" class="img-box">
-                            <img src="../images/staff_2.jpg" class="img-responsive" alt="Staf2">
+                            <img src="../images/staff_SofiHilpert.jpg" class="img-responsive" alt="Sofi Hilpert - Bailarina">
                             <ul>
-                                <li><a href="https://www.instagram.com"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                <li><a href="https://www.facebook.com"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                                <li><a href="https://www.instagram.com/soofihilpert/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@sofihilpert" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
                              </ul>
                         </div>
                         <div class="staffBlanco">
                             <h2>Sofi Hilpert</h2>
                             <h3>Profesora - Bailarina</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
                         </div>
                     </div> 
 
-                    <div class="col-md-4 profile text-center">
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
                         <div id="imagen-staff"  class="img-box">
-                            <img src="../images/staff_3.jpg" class="img-responsive" alt="Staf3">
+                            <img src="../images/staff_GonzaLock.jpg" class="img-responsive" alt="GonzaLock - Bailarin">
                             <ul>
-                                <li><a href="https://www.instagram.com"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                <li><a href="https://www.facebook.com"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                                <li><a href="https://www.instagram.com/gonzalock.dance/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@gonzalock" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
                              </ul>
                         </div>
                         <div class="staffBlanco">
-                            <h2>Lorem, ipsum.</h2>
-                            <h3>Profesora - Bailarina</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4 profile text-center">
-                        <div id="imagen-staff" class="img-box">
-                            <img src="../images/staff_4.jpg" class="img-responsive" alt="Staf4">
-                            <ul>
-                                <li><a href="https://www.instagram.com"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                <li><a href="https://www.facebook.com"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
-                             </ul>
-                        </div>
-                        <div>
-                            <h2>Lorem, ipsum.</h2>
+                            <h2>GonzaLock</h2>
                             <h3>Profesor - Bailarin</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
                         </div>
                     </div> 
 
-                    <div class="col-md-4 profile text-center">
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
                         <div id="imagen-staff" class="img-box">
-                            <img src="../images/staff_5.jpg" class="img-responsive" alt="Staf5">
+                            <img src="../images/staff_Delfiipoutcha.jpg" class="img-responsive" alt="Delfi Ipoutcha - Bailarina">
                             <ul>
-                                <li><a href="https://www.instagram.com"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                <li><a href="https://www.facebook.com"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                                <li><a href="https://www.instagram.com/delfi_ipoutcha/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@delfi_ipoutcha" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
                              </ul>
                         </div>
-                        <div>
-                            <h2>Lorem, ipsum.</h2>
+                        <div class="staffBlanco">
+                            <h2>Defli Ipoutcha</h2>
                             <h3>Profesora - Bailarina</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
                         </div>
                     </div> 
 
-                    <div class="col-md-4 profile text-center">
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
                         <div id="imagen-staff" class="img-box">
-                            <img src="../images/staff_6.jpg" class="img-responsive" alt="Staf6">
+                            <img src="../images/staff_AlcidesSanchiz.jpg" class="img-responsive" alt="Alcides Sanchiz - Bailarin">
                             <ul>
-                                <li><a href="https://www.instagram.com"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
-                                <li><a href="https://www.facebook.com"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                                <li><a href="https://www.instagram.com/alcidespana/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@alcidespana" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
                              </ul>
                         </div>
                         <div>
-                            <h2>Lorem, ipsum.</h2>
+                            <h2>Alcides Sanchiz</h2>
+                            <h3>Bailarin - Coreógrafo</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_SofSalomon.jpg" class="img-responsive" alt="Sof Salomon- Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/sofsalomon/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@sofisalomon" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Sof Rodriguez</h2>
+                            <h3>Bailarina - Profesora</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_FerRusso.jpg" class="img-responsive" alt="Fer Russo - Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/ferrusso__/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.facebook.com/Ferchu.Russo" target="_blank"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Fer Russo</h2>
                             <h3>Profesora - Bailarina</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptas?</p>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_FacuLopez.jpg" class="img-responsive" alt="Facu Lopez - Bailarin">
+                            <ul>
+                                <li><a href="https://www.instagram.com/fakulz/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@fakulz" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Facu Lopez</h2>
+                            <h3>Bailarin - Performer</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_MaguiPombo.jpg" class="img-responsive" alt="Magui Pombo- Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/maguiipombo/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@maguiipomboo" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Magui Pombo</h2>
+                            <h3>Bailarina - Profesora</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_PauCiruzzi.jpg" class="img-responsive" alt="Pau Ciruzzi - Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/paulaciruzzi/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.facebook.com/paula.ciruzzi.5" target="_blank"><img src="../images/icono_facebook.png" alt="Facebook"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Pau Ciruzzi</h2>
+                            <h3>Profesora - Bailarina</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_MiliVinas.jpg" class="img-responsive" alt="Mili Viñas - Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/milivinas/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@milivinas1" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Mili Viñas</h2>
+                            <h3>Bailarina - Profesora</h3>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4 col-sm-6 col-lg-3 profile text-center">
+                        <div id="imagen-staff" class="img-box">
+                            <img src="../images/staff_IaraVidal.jpg" class="img-responsive" alt="Iara Vidal - Bailarina">
+                            <ul>
+                                <li><a href="https://www.instagram.com/iaaravidal/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.tiktok.com/@iaaravidal" target="_blank"><img src="../images/icono_tiktok.png" alt="TikTok"></a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2>Iara Vidal</h2>
+                            <h3>Bailarina - Profesora</h3>
                         </div>
                     </div> 
                 </div>
@@ -180,7 +259,7 @@
                         <div class="redes">
                             <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a>
                             <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a>
-                            <a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a>
+                            <a href="https://www.youtube.com/channel/UCH3KLVDKkJ139N-vGIj7hWQ" target="_blank"> <img src="../images/icono_youtube.png" alt="Youtube"></a>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
                         </div>
                         <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
@@ -199,8 +278,10 @@
             </div>
 	    </footer>
 
-        <!-- JavaScript Bundle with Popper -->
+        <!-- JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script>AOS.init();</script> 
+
 
     </body>
 

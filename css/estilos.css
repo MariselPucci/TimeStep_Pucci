@@ -389,7 +389,7 @@ footer {
 #imagen-staff img {
     width: 100%;
 }
-.col-md-4.profile {
+.col-md-3.profile {
     margin-top: 25px;
 }
 
@@ -400,15 +400,18 @@ footer {
 }
 
 .col-md-4.profile h2 {
-    font-size: 22px;
-    margin-top: 15px;
+    font-size: 1.2em;
+    padding: 0.7rem 0;
     text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 0.1em;
+    text-align: center;
+    
 }
 
-.col-md-4.profile h3 {
-    font-size: 15px;
-    margin-top: 15px;
+.col-md-.profile h3 {
+    font-size: 1em;
+    margin-top: 5px;
     font-weight: bold;
     letter-spacing: 0.1em;
 

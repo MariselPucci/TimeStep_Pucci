@@ -63,15 +63,63 @@ header .container .navbar .container-fluid #menu .nav-item .nav-link.active, hea
 }
 
 /* ===================================================================================== */
-/* estilos banner titulo paginas*/
+/* estilos banner titulo index */
+.banner {
+  position: relative;
+  background: url(../images/slide_3.jpg);
+  height: 100vh;
+  padding: 300px 0 300px;
+  z-index: -20;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -20;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), black 95%);
+}
+
+.banner h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 2.4em;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+}
+
+.banner p {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+/* ===================================================================================== */
+/* estilos banner titulo pages*/
 .bannerTitulo {
   position: relative;
   background: url(../images/fondo_2.jpg);
   height: 400px;
-  background-size: cover;
-  background-position: center;
   padding: 200px 0 200px;
   z-index: -20;
+  background-size: cover;
+  background-position: center;
 }
 
 .bannerTitulo::before {
@@ -91,12 +139,501 @@ header .container .navbar .container-fluid #menu .nav-item .nav-link.active, hea
   margin: 0;
   padding: 0;
   padding-left: 20px;
-  letter-spacing: 0.1em;
-  color: #fff;
+  font-weight: 400;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+  letter-spacing: 0.1em;
   font-size: 2.4em;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+}
+
+/* ===================================================================================== */
+/* estilos secciones (instituto-clases-staff-horario) pagina home */
+main #intro {
+  background: transparent;
+  color: #fff;
+}
+
+main #intro h2 {
+  font-size: 1.7em;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+}
+
+main #intro p {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+main #intro .btn-neon {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 4px;
+  overflow-y: hidden;
+  transition: 0.2s;
+  border: none;
+  color: #fff;
+  background: transparent;
+}
+
+main #intro .btn-neon:hover {
+  background: #f4004f;
+  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+}
+
+main .container.secciones .row.g-3 {
+  margin-top: 8%;
+  margin-bottom: 10%;
+  padding-bottom: 20px;
+}
+
+main .container.secciones .row.g-3 .card {
+  border-radius: 0;
+  border: none;
+}
+
+main .container.secciones .row.g-3 .card .inner {
+  overflow: hidden;
+}
+
+main .container.secciones .row.g-3 .card .inner img {
+  transition: all 1.5s ease;
+}
+
+main .container.secciones .row.g-3 .card .inner:hover img {
+  transform: scale(1.5);
+}
+
+main .container.secciones .row.g-3 .card .card-body .card-title {
+  font-size: 1.7em;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #000;
+}
+
+main .container.secciones .row.g-3 .card .card-body .card-text {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #000;
+  padding: 10px;
+}
+
+main .container.secciones .row.g-3 .card .card-body .btn-neon {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 4px;
+  overflow-y: hidden;
+  transition: 0.2s;
+  border: none;
+  color: #000;
+  background: transparent;
+}
+
+main .container.secciones .row.g-3 .card .card-body .btn-neon:hover {
+  background: #f4004f;
+  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+  color: #fff;
+}
+
+/* ===================================================================================== */
+/* estilos pagina instituto*/
+main .container .card-body.instituto h2 {
+  font-size: 1.7em;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+}
+
+main .container .card-body.instituto p {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1em;
+  text-align: justify;
+}
+
+main .container .card-body.instituto .datos {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+main .container .card-body.instituto .datos p {
+  text-align: center;
+}
+
+main .container .card-body.instituto .datos:hover {
+  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+}
+
+main .container .img-clases {
+  width: 100%;
+}
+
+main .container .img-clases:hover {
+  transform: scale(1.05);
+}
+
+main .container .box-fondo {
+  background: #000;
+  padding-bottom: 150px;
+}
+
+main .container .box-fondo .container.video p {
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+  text-align: justify;
+}
+
+main .container #carouselExampleFade {
+  position: relative;
+  z-index: 100;
+  top: -140px;
+}
+
+main .container .container.frase {
+  position: relative;
+  top: -100px;
+  padding: 20px;
+  font-size: 1.1em;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #000;
+  font-size: 1em;
+}
+
+/* ===================================================================================== */
+/* estilos pagina staff*/
+main .staff {
+  padding-top: 100px;
+}
+
+main .staff .col-md-4.profile {
+  margin-top: 25px;
+}
+
+main .staff .col-md-4.profile #imagen-staff {
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+
+main .staff .col-md-4.profile #imagen-staff:after {
+  content: "";
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+main .staff .col-md-4.profile #imagen-staff:hover:after {
+  opacity: 1;
+}
+
+main .staff .col-md-4.profile #imagen-staff img {
+  width: 100%;
+}
+
+main .staff .col-md-4.profile #imagen-staff ul {
+  margin: 0;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+main .staff .col-md-4.profile #imagen-staff ul li {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  margin: 7px;
+  display: inline-block;
+}
+
+main .staff .col-md-4.profile #imagen-staff:hover ul {
+  opacity: 1;
+}
+
+main .staff .col-md-4.profile h2 {
+  font-size: 1.7em;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #000;
+  font-size: 1.1em;
   font-weight: 700;
+}
+
+main .staff .col-md-4.profile h3 {
+  font-size: 1em;
+  margin-top: 5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+main .staff .col-md-4.profile .staffBlanco h2 {
+  color: #fff;
+}
+
+main .staff .col-md-4.profile .staffBlanco h3 {
+  color: #fff;
+}
+
+/* ===================================================================================== */
+/* estilos pagina clases*/
+main .container.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: auto;
+  gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+main .container.galeria a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+main .container.galeria a img {
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+main .container.galeria a:hover img {
+  filter: blur(2px);
+}
+
+main .light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: transform .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+main .light-box img {
+  width: auto;
+  height: 90vh;
+}
+
+main .light-box:target {
+  transform: scale(1);
+}
+
+main .light-box .close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #f4004f;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+main .light-box .next {
+  display: block;
+  background: #f4004f;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ===================================================================================== */
+/* estilos pagina horario*/
+main .container .img-grande {
+  width: 100%;
+  min-height: auto;
+}
+
+main .container-fluid .novedades #box-img img {
+  width: 100%;
+}
+
+main .container-fluid .novedades #box-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===================================================================================== */
+/* estilos main pagina contacto*/
+main {
+  background: linear-gradient(black, white 90%);
+  height: 100%;
+  position: relative;
+}
+
+main .container.formulario .form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  padding: 35px 25px;
+}
+
+main .container.formulario .form .form__header .form__title {
+  font-size: 1.7em;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+}
+
+main .container.formulario .form .form__label {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+  padding: 3px;
+}
+
+main .container.formulario .form .form__input, main .container.formulario .form .form__textarea {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 13px;
+  border-radius: 2px;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+main .container.formulario .form .form__textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+main .container.formulario .form .btnSubmit {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 4px;
+  overflow-y: hidden;
+  transition: 0.2s;
+  border: none;
+  color: #fff;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+main .container.formulario .form .btnSubmit:hover {
+  background: #171815;
+  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+}
+
+main .container .contacto {
+  display: grid;
+  grid-template-columns: 30px 2fr;
+  grid-template-rows: 50px  50px 50px 50px 50px;
+}
+
+main .container .contacto span {
+  padding: 10px;
+  font-size: 1em;
+}
+
+main .container .maps iframe {
+  filter: invert(1) grayscale(1);
+}
+
+.container-fluid.titulo {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.container-fluid.titulo a {
+  text-decoration: none;
+}
+
+.container-fluid.titulo a .tituloAnimado {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 30px 0;
+  padding-top: 40px;
+  font-size: 1.7em;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), #171815 90%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
 }
 
 /* ===================================================================================== */
@@ -119,6 +656,7 @@ footer .footer-container {
 
 footer .container .footer-container .navbar-brand.footer {
   font-size: 2em;
+  margin: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -136,7 +674,7 @@ footer .container .footer-container .rights-text {
 }
 
 footer .container .footer-container .right-col h3 {
-  font-size: 26px;
+  font-size: 1.7em;
 }
 
 footer .container .footer-container .right-col .border {
@@ -154,8 +692,8 @@ footer .container .footer-container .right-col .contact {
 
 footer .container .footer-container .right-col .contact .txtb {
   flex: 1;
-  padding: 18px 40px;
-  font-size: 16px;
+  padding: 15px 40px;
+  font-size: 1em;
   font-weight: 700;
   color: black;
   background: #ddd;
@@ -165,122 +703,50 @@ footer .container .footer-container .right-col .contact .txtb {
 }
 
 footer .container .footer-container .right-col .contact .btn-footer {
-  padding: 18px 40px;
-  font-size: 16px;
+  text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
-  background: #444;
-  border: none;
-  outline: none;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
   letter-spacing: 4px;
   overflow-y: hidden;
   transition: 0.2s;
-  cursor: pointer;
-}
-
-footer .container .footer-container .right-col .contact .btn-footer:hover {
-  background: #f4004f;
-  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
-  color: #fff;
-}
-
-/* ===================================================================================== */
-/* estilos main pagina contacto*/
-main {
-  background: linear-gradient(black, white 90%);
-  height: 100%;
-  position: relative;
-}
-
-main .container.formulario .form {
-  background: rgba(0, 0, 0, 0.6);
-  width: 95%;
-  max-width: 800px;
-  margin: auto;
-  padding: 35px 25px;
-}
-
-main .container.formulario .form .form__header .form__title {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1.4em;
-}
-
-main .container.formulario .form .form__label {
-  display: block;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-}
-
-main .container.formulario .form .form__input, main .container.formulario .form .form__textarea {
-  background: rgba(0, 0, 0, 0.6);
   border: none;
-  outline: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  width: 100%;
-  padding: 12px;
-  border-radius: 2px;
-  font-size: 14px;
   color: #fff;
-}
-
-main .container.formulario .form .form__textarea {
-  resize: vertical;
-  max-height: 150px;
-  min-height: 50px;
-}
-
-main .container.formulario .form .btnSubmit {
-  width: 100%;
-  outline: none;
   background: #444;
-  font-size: 16px;
-  border: none;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 15px 0;
-  cursor: pointer;
-}
-
-main .container.formulario .form .btnSubmit:hover {
-  background: #f4004f;
-  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
-}
-
-main .container .contacto {
-  display: grid;
-  grid-template-columns: 30px 2fr;
-  grid-template-rows: 50px  50px 50px 50px 50px;
-}
-
-main .container .contacto span {
-  padding: 10px;
+  padding: 15px 40px;
   font-size: 1em;
 }
 
-main .container .maps iframe {
-  filter: invert(1) grayscale(1);
+footer .container .footer-container .right-col .contact .btn-footer:hover {
+  background: #171815;
+  box-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+  color: #fff;
 }
 
+/* ========================================================================================= */
 /* adaptacion  hasta 991px */
 @media (max-width: 991px) {
   .navbar .container-fluid #menu .nav-item a {
     text-align: center;
     background: transparent;
   }
+  .banner {
+    padding: 270px 0;
+    max-height: 39rem;
+  }
+  .banner:before {
+    max-height: 39rem;
+  }
   .bannerTitulo {
     padding: 180px 0;
     max-height: 400px;
   }
   .bannerTitulo:before {
-    max-height: 39rem;
+    max-height: 400px;
   }
   .bannerTitulo h1 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin-top: 90px;
   }
   .container .footer-container {
@@ -299,19 +765,85 @@ main .container .maps iframe {
 /* ========================================================================================= */
 /* adaptacion hasta 768px*/
 @media (max-width: 768px) {
+  /* Pagina index */
+  .banner .container .row #banner-text h1 {
+    font-size: 1.7em;
+  }
+  .banner .container .row #banner-text p {
+    font-size: 1em;
+  }
+  main #intro {
+    width: 100% !important;
+  }
+  main #intro h2 {
+    font-size: 1.4em;
+  }
+  main #intro p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  /* Pagina instituto */
+  main .container .card-body.instituto h2 {
+    font-size: 1.4em;
+  }
+  main .container .card-body.instituto p {
+    text-align: justify;
+  }
+  main .container .card-body.instituto .datos h5 {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+  }
+  main .container .card-body.instituto .datos p {
+    font-size: 1em;
+    text-align: center;
+  }
+  main .container .card-body.instituto .datos:hover {
+    text-shadow: 0 0 10px #f4004f, 0 0 20px #f4004f, 0 0 40px #f4004f, 0 0 80px #f4004f, 0 0 120px #f4004f;
+  }
+  main .container .box-fondo {
+    padding-bottom: 0;
+    margin-bottom: 50px;
+  }
+  main .container .box-fondo .container.video {
+    padding-bottom: 0;
+  }
+  main .container .box-fondo .container.video p {
+    padding-bottom: 0;
+  }
+  main .container #carouselExampleFade {
+    display: none;
+  }
+  main .container .container.frase {
+    display: none;
+  }
+  /* Pagina clases */
+  main .container.galeria a:hover img {
+    filter: blur(0);
+    transform: scale(1.03);
+    cursor: default;
+  }
+  main .light-box {
+    display: none;
+  }
+  /* Pagina contacto */
   main .container .contacto {
     margin-top: 20px;
     grid-template-rows: 60px 60px 60px 60px 60px;
   }
   main .container .contacto span {
-    font-size: 0.9em;
+    font-size: 1em;
   }
+  .container-fluid #contact-page {
+    display: block !important;
+  }
+  .container-fluid #contact-page .container .form .form__header .form__title {
+    font-size: 1.4em;
+  }
+  /* Footer */
   .container .footer-container .right-col .btn-footer {
     margin: 0;
     width: 100%;
     margin-top: 20px;
-  }
-  .container-fluid #contact-page {
-    display: block !important;
   }
 }
