@@ -1,0 +1,77 @@
+/* ===================================================================================== */
+/* estilos footer*/
+
+footer {
+    background-color: $fondoSecundario;
+    padding: 90px 0;
+    color: $colorPrincipal;
+    .footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    }
+    .container {
+        .footer-container {
+            .navbar-brand.footer {
+                font-size: $fontSizeBrand;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: bold ; 
+            }
+            .redes {
+                margin: 20px 0;
+                & a {
+                    margin-right: 25px;  
+                }
+            }
+            .rights-text {
+                color: #888;
+            }
+            .right-col {
+                h3{
+                 font-size: $fontSizeTituloSecundario; 
+                } 
+                .border {
+                    width: 130px;
+                    height: 3px;
+                    background: #fff;
+                }
+             
+                .contact {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .txtb {
+                        flex: 1;
+                        padding: 15px 40px;
+                        font: {
+                            size: $smallText;
+                            weight: 700;
+                        }
+                        color: black;
+                        background: #ddd;
+                        border: none;
+                        outline: none;
+                        min-width: 10px;
+                    }
+                    .btn-footer {
+                        @include boton (#fff,$colorTerciario);
+                         padding: 15px 40px; 
+                        font-size: $smallText;
+                        &:hover {
+                            background: $fondoSecundario;
+                            box-shadow: $sombra-colorSecundario;   
+                            color: $colorPrincipal;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+

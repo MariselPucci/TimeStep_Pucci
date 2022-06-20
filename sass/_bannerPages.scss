@@ -1,0 +1,64 @@
+/* ===================================================================================== */
+/* estilos banner titulo index */
+.banner {
+    position: relative;
+    background: url(../images/fondo_1.jpg);
+    height: 100vh;
+    padding: 300px 0 300px;
+    z-index: -20;
+    background: {
+        size: cover;
+        position: center;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index:-20;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: $degradeeImg;  
+    }
+    h1 {
+        @include tituloPpal;
+    }
+    p {
+        @include parrafo (#fff);
+        font-size: 1.3em; 
+    }  
+}
+
+/* ===================================================================================== */
+/* estilos banner titulo pages*/
+
+.bannerTitulo {
+    position: relative;
+    background: url(../images/fondo_2.jpg);
+    height: 400px;
+    padding: 200px 0 200px;
+    z-index: -20;
+    background: {
+        size: cover;
+        position: center;
+    }
+
+    &::before {
+        content:"";
+        display:block;
+        position:absolute;
+        z-index:-20;
+        height:400px;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,1) 95%);
+    } 
+
+    h1 {
+    @include tituloPpal;  
+    }
+}

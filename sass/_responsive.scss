@@ -1,0 +1,206 @@
+/* ========================================================================================= */
+/* adaptacion  hasta 991px */
+@media (max-width: 991px) {
+    .navbar {
+        .container-fluid {
+            #menu {
+                .nav-item {
+                    & a {
+                        text-align: center;
+                         background: transparent;
+                    }
+                }
+            }           
+        }
+    }
+
+    .banner {
+        padding: 270px 0;
+        max-height: 39rem; 
+        &:before {
+            max-height: 39rem;
+        }
+    }
+    .bannerTitulo {
+        padding: 180px 0;
+        max-height: 400px;
+        &:before {
+             max-height: 400px;
+        }
+        & h1 {
+            font-size: $fontSizeTituloSecundario;
+            margin-top: 90px;  
+        }
+    }
+    .container {
+        .footer-container {
+            max-width: 600px; 
+            .right-col {
+                width: 100%;
+                margin-bottom: 60px;
+            }   
+            .left-col {
+                width: 100%;
+                text-align: center;
+            }     
+        }   
+    }   
+}
+
+/* ========================================================================================= */
+/* adaptacion hasta 768px*/
+
+@media (max-width: 768px) {
+
+    /* Pagina index */
+    
+        .banner {
+            .container {
+                .row {
+                    #banner-text {
+                        h1 {
+                            font-size: 1.7em;
+                        }
+                        p {
+                            font-size: $smallText;
+                        }
+                    } 
+                }
+            } 
+        }
+ 
+    main {
+        #intro{
+            width: 100%!important;
+            h2 {
+                font-size: 1.4em;
+            }
+            p {
+                font-size: $smallText;
+                text-align: justify;
+            }
+        } 
+    }
+ 
+
+    /* Pagina instituto */
+    main {
+        .container {
+            .card-body {
+                &.instituto {
+                    h2 {
+                        font-size: 1.4em;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                    .datos {
+                        h5 {
+                            font-size: $smallText;
+                            font-weight: 700;
+                            text-align: center;  
+                        }
+                        p {
+                            font-size: $smallText;
+                            text-align: center;   
+                        }
+                        &:hover {
+                            text-shadow: $sombra-colorSecundario; 
+                        }
+                    }
+                }
+            }
+            .box-fondo {
+                padding-bottom: 0;
+                margin-bottom: 50px;
+                .container {
+                    &.video {
+                        padding-bottom: 0;
+                        p {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+            #carouselExampleFade {
+                display: none;
+            }
+            .container {
+                &.frase {
+                    display: none;
+                
+                }
+            }
+        }
+    }
+
+    /* Pagina clases */
+    main {
+        .container{
+            &.galeria {
+                a:hover img {
+                    filter: blur(0);
+                    transform: scale(1.03); 
+                    cursor: default; 
+                }
+            }
+        }
+        .light-box {
+            display: none;
+        }
+       
+    }
+
+  
+    /* Pagina contacto */
+    main {
+        .container {
+            & .contacto {
+                margin-top: 20px;
+                grid-template-rows: 60px 60px 60px 60px 60px;
+                span {
+                    font-size: $smallText; 
+                }
+            }
+        }
+    }        
+    .container-fluid {
+        #contact-page {
+         display: block!important;
+            .container {
+                .form {
+                    .form__header {
+                        .form__title {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Footer */
+    .container {
+        .footer-container {
+            .right-col {
+               .btn-footer {
+                    margin: 0;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }    
+        }   
+    }    
+}
+
+
+/* ========================================================================================= */
+/* adaptacion desde 992px */
+@media (min-width: 992px) {
+    .banner {
+        padding: 300px 0;
+        max-height: 39rem; 
+        &:before {
+            max-height: 39rem;
+        }
+    }
+}

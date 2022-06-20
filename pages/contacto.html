@@ -4,23 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
-        <title>Instituto Time Step</title>
-        <link rel="shortcut icon" href="images/favicon_timestep.ico">
 
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="stylesheet" href="../css/responsive.css"> 
+        <meta name= "keywords" content="contacto, escribinos, ubicacion, redes sociales, direccion, email, teléfono, Capital Fedetal, Buenos Aires, Argentina"> 
+        <title>Time Step | Contactanos</title> 
+        <meta name="description" content="Time Step se encuentra en Av. Nazca N°1463 -CABA- Argentina. Ponete en contacto con nosotros. Seguinos en nuestras redes sociales.">
+
+        <link rel="shortcut icon" href="../images/favicon_timestep.ico">
+
+        <link rel="stylesheet" href="../css/style.css"> 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     </head>  
     
+    <body>
           <!-- Inicio barra de navegacion -->   
           <header>
             <div class="container">
@@ -28,7 +32,8 @@
 
                     <div class="container-fluid">
                         <a id="logo" class="navbar-brand" href="../index.html">Time Step</a>
-                        <button id="menu-buttom" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+
+                        <button id="menu-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon fs-6"></span>
                         </button>
                         <div class="collapse navbar-collapse show" id="navbarDark">
@@ -41,56 +46,53 @@
                                     <a class="nav-link" aria-current="page" href="instituto.html">Instituto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="staff.html">Staff</a>
+                                    <a class="nav-link " href="staff.html">Staff</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="clases.html">Clases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="horarios.html">Horario</a>
+                                    <a class="nav-link " href="horarios.html">Horario</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div> 
-                    </div>   
+                    </div> 
                 </nav>
             </div>       
         </header>
-  <body>
- 
-      
-        <section class="bannerTitulo">
+
+        <div class="bannerTitulo">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h2 class="animate__animated animate__backInLeft">Contactanos</h2>
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="col-sm-6">
+                        <h1>Contactanos</h1>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
             
         <main class="container-fluid">
-            <section class="container-fluid">
-                <div id="contact-page" class="container d-flex w-100">
+            <section id="contact-page" class="container d-flex w-100">
                     <div class="container formulario pt-5 pb-5">
                         <form action="enviar.php" class="form" method="get" enctype="text/plain">
                             <div class="form__header">
-                                <h2 class="form__title"><span>Escribinos</span></h2>
+                                <h2 class="form__title"><strong>Escribinos</strong></h2>
                             </div>
                         
                             <label for="nombre" class="form__label">Nombre:</label> 
-                            <input type="text" class="form__input" name="nombre" placeholder="Ingrese su nombre" required/> 
+                            <input type="text" class="form__input" id="nombre" placeholder="Ingrese su nombre" required> 
                                
                             <label for="apellido" class="form__label">Apellido:</label> 
-                            <input type="text" class="form__input" name="apellido" placeholder="Ingrese su apellido" required> 
+                            <input type="text" class="form__input" id="apellido" placeholder="Ingrese su apellido" required> 
                              
                             <label for="email" class="form__label"> Email:</label>
-                            <input type="email" class="form__input"  name="email" placeholder="Ingrese su email" required>
+                            <input type="email" class="form__input"  id="email" placeholder="Ingrese su email" required>
                         
-                            <label for="comenrarios" class="form__label"> Mensaje: </label>
-                            <textarea name="Comentarios" class="form__textarea"  id="Comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
+                            <label for="comentarios" class="form__label"> Mensaje: </label>
+                            <textarea name="Comentarios" class="form__textarea"  id="comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
                           
                             <input type="submit" class="btnSubmit btn-neon" value="Enviar"/>
                         </form> 
@@ -101,14 +103,13 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.499289468907!2d-58.479074885172416!3d-34.61682088045609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9efaf30d7ff%3A0x84986d938fdf600a!2sAv.%20Nazca%201463%2C%20C1416ASD%20CABA!5e0!3m2!1ses-419!2sar!4v1650945751616!5m2!1ses-419!2sar" width="100%" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="container contacto pt-2">
-                            <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - Capital Federal - Argentina</span>
+                            <img src="../images/icono_ubicacion.png" alt="Ubicacion">  <span>Av.Nazca N°1463 - CABA - Argentina</span>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>  <span>+54-11-549800</span>
                              <img src="../images/icono_email.png" alt="Email"><span>timestep@gmail.com</span>
                              <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a><span>instagram.com/timestep</span>
                             <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a> <span>Instituto Time Step</span>
                         </div>
                     </div>
-                </div>
             </section>
         </main>  
 
@@ -121,8 +122,8 @@
                         <a class="navbar-brand footer" href="../index.html">Time Step</a>
                         <div class="redes">
                             <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook">
-                            <a href="https://www.tiktok.com" target="_blank"> <img src="../images/icono_tiktok.png" alt="Tik Tok"></a>
+                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a>
+                            <a href="https://www.youtube.com/channel/UCH3KLVDKkJ139N-vGIj7hWQ" target="_blank"> <img src="../images/icono_youtube.png" alt="Youtube"></a>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
                         </div>
                         <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
@@ -133,16 +134,17 @@
                         <div class="border"></div>
                         <p>Dejanos tu email y no te pierdas las novedades</p>
                         <form action="enviar.php" class="contact">
-                            <input type="email" name="" class="txtb" placeholder="Ingresa tu email"> 
-                            <input type="submit" class="btn-footer" value="Enviar" name="">
+                            <input type="email" class="txtb" placeholder="Ingresa tu email" required> 
+                            <input type="submit" class="btn-footer" value="Enviar">
                         </form>
                     </div>
                 </div>
             </div>
 	    </footer>
 
-        <!-- JavaScript Bundle with Popper -->
+        <!-- JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script>AOS.init();</script> 
 
     </body>
 

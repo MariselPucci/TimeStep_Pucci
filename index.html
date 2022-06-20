@@ -4,18 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name= "keywords" content=" danza, baile, clases de baile, ritmos, insttuto de danza"> 
-        <title>Instituto Time Step</title>
+        
+        <meta name= "keywords" content=" danza, baile, clases, ritmos, profesorado, jazz, urbano, tap, reggaeton, coreografía, heels, arte"> 
+        <title>Time Step | Instituto de danzas</title> 
+        <meta name="description" content="Clases de baile para todas las edades y niveles. Profesorados de Danzas Urbanas, Jazz y Tap.">
+
         <link rel="shortcut icon" href="images/favicon_timestep.ico">
 
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/responsive.css"> 
+        <link rel="stylesheet" href="css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gudea:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -25,18 +30,17 @@
         <!-- Inicio barra de navegacion -->   
         <header>
             <div class="container">
-                <nav class="navbar navbar-expand-xl bg-custom p-2">
+                <nav class="navbar navbar-expand-lg bg-custom p-2">
 
                     <div class="container-fluid">
                         <a id="logo" class="navbar-brand" href="index.html">Time Step</a>
 
-                        <button id="menu-buttom" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                        <button id="menu-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon fs-6"></span>
                         </button>
-
                         <div class="collapse navbar-collapse show" id="navbarDark">
 
-                            <ul id="menu" class="navbar-nav ml-lg-auto mb-2 mb-xl-0">
+                            <ul id="menu" class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
@@ -44,94 +48,93 @@
                                     <a class="nav-link" aria-current="page" href="pages/instituto.html">Instituto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/staff.html">Staff</a>
+                                    <a class="nav-link " href="pages/staff.html">Staff</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/clases.html">Clases</a>
+                                    <a class="nav-link " href="pages/clases.html">Clases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/horarios.html">Horario</a>
+                                    <a class="nav-link " href="pages/horarios.html">Horario</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="pages/contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div> 
-                    </div>   
+                    </div> 
                 </nav>
             </div>       
         </header>
 
-            <section class="banner">
+            <div  class="banner">
                 <div class="container mt-5">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="animate__animated animate__backInLeft">Arte en movimiento</h2>
-                            <p class="animate__animated animate__backInLeft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium odit qui sequi totam molestiae repudiandae deserunt recusandae aut minima, illum, beatae optio magni! Cum, dolorem facere! Eos, earum deleniti!</p>
+                        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="banner-text" class="col-sm-12 col-md-12 col-lg-6">
+                            <h1 >Arte en movimiento</h1>
+                            <p> Los que fueron vistos bailando fueron considerados locos por los que no podían escuchar la música...Sumate a la experiencia, <strong>Vení a bailar con nosotros!</strong></p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             
     <main class="container-fluid">
 
             <!-- seccion sobre el instituto -->
-            <section id="intro" class="w-75 mx-auto text-center pt-5">
-                <h2>Conoce Time Step</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum et nulla error perferendis facilis fugiat soluta, beatae eligendi! Rem quae possimus ipsum magni vero nobis ipsa dignissimos voluptatum adipisci.</p>
+            <section data-aos="fade-up" data-aos-duration="3000" id="intro" class=" container w-75 mx-auto text-center pt-5">
+                <h2>Instituto de Danzas Time Step</h2>
+                <p>Surgió en el 2014, a partir del sueño de su Directora <strong>Florencia Penas</strong>, para convertirse hoy en un sueño colectivo, en una familia, formando profesionales, compartiendo buenos momentos, disfrutando del arte de bailar...Te invitamos a conocernos y ser parte de nuestra historia. </p>
                <a href="pages/instituto.html" class="btn-neon">Descubrí más!</a>
             </section>
-     
- 
-            <div class="container secciones">
-                <div class="row g-3">
-                    <!-- seccion clases -->
-                    <section class="col-12 col-md-6 col-lg-4">   
-                        <div class="card shadow">
-                            <div class="inner">
-                                <img src="images/inicio_clases.jpg" class="card-img-top" alt="Clases">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Baila con nosotros</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
-                                <a href="pages/clases.html" class="btn-neon sobreBlanco">Clases</a>
-                            </div>
-                        </div>
-                    </section> 
 
-                    <!-- seccion staff -->
-                    <section class="col-12 col-md-6 col-lg-4">
+            <div class="container secciones mx-auto">
+                <div class="row g-3">
+                     <!-- seccion staff -->
+                     <section data-aos="fade-up" data-aos-duration="3000" class="col-12 col-md-4">
                         <div class="card shadow">
                             <div class="inner">
                                 <img src="images/inicio_staff.jpg" class="card-img-top" alt="Staff">
                             </div>
                             <div class="card-body text-center">
-                                <h5 class=" card-title">Staff</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
-                                <a href="pages/staff.html" class="btn-neon sobreBlanco">Conocenos</a>
+                                <h2 class=" card-title">Staff</h2>
+                                <p class="card-text"> <strong>Bailarines </strong>  apasionados por la danza y la enseñanza que están esperandote con la mejor onda. Staff de <strong>profesionales</strong>  de lujo.</p>
+                                <a href="pages/staff.html" class="btn-neon">Conocenos</a>
                             </div>
                         </div> 
                     </section> 
 
-                    <!-- seccion novedades-->
-                     <section class="col-12 col-md-6 col-lg-4">
+                    <!-- seccion clases -->
+                    <section data-aos="fade-up" data-aos-duration="3000" class="col-12 col-md-4">  
                         <div class="card shadow">
                             <div class="inner">
-                                <img src="images/novedades_4.jpg" class="card-img-top" alt="Novedades">
+                                <img src="images/inicio_clases.jpg" class="card-img-top" alt="Clases">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title">Clases</h2>
+                                <p class="card-text"> <strong>Clases de baile</strong>  para todas las edades y niveles. <strong>Profesorado</strong> en Danzas Urbanas, Jazz y Tap. Variedad de ritmos. </p>
+                                <a href="pages/clases.html" class="btn-neon">Clases</a>
+                            </div>
+                        </div>
+                    </section> 
+
+                    <!-- seccion novedades-->
+                     <section data-aos="fade-up" data-aos-duration="3000" class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="inner">
+                                <img src="images/inicio_horario.jpg" class="card-img-top" alt="Horarios">
                              </div>   
                             <div class="card-body text-center">
-                                <h5 class="card-title">Horarios - Novedades</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque qui consequatur corrupti impedit rerum placeat autem deleniti voluptatum debitis. Sunt illum culpa veritatis, necessitatibus architecto dolore. Debitis mollitia aut sint.</p>
-                                <a href="pages/horarios.html" class="btn-neon sobreBlanco">Ver mas</a>
+                                <h2 class="card-title">Horarios</h2>
+                                <p class="card-text">Chequeá nuestros horarios, actualizamos las clases para ofrecerte nuevas experiencias. No te pierdas las <strong>novedades.</strong> </p>
+                                <a href="pages/horarios.html" class="btn-neon">Ver mas</a>
                             </div>
                         </div>
                     </section> 
                 </div>
-            </div>
+            </div>      
         </main>  
 
         <div class="container-fluid  titulo text-center">
-            <a href="pages/contacto.html"><h2 class="tituloAnimado animate__animated animate__backInLeft">Ponete en contacto</h2></a>
+            <a href="pages/contacto.html"><h2 class="tituloAnimado">Ponete en contacto</h2></a>
         </div>
 
         <!-- Inicio de footer-->
@@ -142,8 +145,8 @@
                         <a class="navbar-brand footer" href="index.html">Time Step</a>
                         <div class="redes">
                             <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="images/icono_instagram.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="images/icono_facebook.png" alt="Facebook">
-                            <a href="https://www.tiktok.com" target="_blank"> <img src="images/icono_tiktok.png" alt="Tik Tok"></a>
+                            <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="images/icono_facebook.png" alt="Facebook"></a>
+                            <a href="https://www.youtube.com/channel/UCH3KLVDKkJ139N-vGIj7hWQ" target="_blank"> <img src="images/icono_youtube.png" alt="Youtube"></a>
                             <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="images/icono_whatsapp.png" alt="WhatsApp"></a>
                         </div>
                         <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
@@ -154,16 +157,17 @@
                         <div class="border"></div>
                         <p>Dejanos tu email y no te pierdas las novedades</p>
                         <form action="enviar.php" class="contact">
-                            <input type="email" name="" class="txtb" placeholder="Ingresa tu email"> 
-                            <input type="submit" class="btn-footer" value="Enviar" name="">
+                            <input type="email" class="txtb" placeholder="Ingresa tu email" required> 
+                            <input type="submit" class="btn-footer" value="Enviar">
                         </form>
                     </div>
                 </div>
             </div>
 	    </footer>
 
-        <!-- JavaScript Bundle with Popper -->
+        <!-- JavaScript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script>AOS.init();</script> 
 
     </body>
 
