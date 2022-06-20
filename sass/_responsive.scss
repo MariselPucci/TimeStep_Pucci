@@ -192,3 +192,15 @@
     }    
 }
 
+
+/* ========================================================================================= */
+/* adaptacion desde 992px */
+@media (min-width: 992px) {
+    .banner {
+        padding: 300px 0;
+        max-height: 39rem; 
+        &:before {
+            max-height: 39rem;
+        }
+    }
+}

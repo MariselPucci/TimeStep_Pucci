@@ -66,7 +66,7 @@ header .container .navbar .container-fluid #menu .nav-item .nav-link.active, hea
 /* estilos banner titulo index */
 .banner {
   position: relative;
-  background: url(../images/slide_3.jpg);
+  background: url(../images/fondo_1.jpg);
   height: 100vh;
   padding: 300px 0 300px;
   z-index: -20;
@@ -218,6 +218,11 @@ main .container.secciones .row.g-3 .card .inner:hover img {
   transform: scale(1.5);
 }
 
+main .container.secciones .row.g-3 .card .card-body {
+  height: max-content;
+  background-color: #000;
+}
+
 main .container.secciones .row.g-3 .card .card-body .card-title {
   font-size: 1.7em;
   padding: 0.7rem 0;
@@ -226,7 +231,7 @@ main .container.secciones .row.g-3 .card .card-body .card-title {
   font-family: 'Dosis', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 
 main .container.secciones .row.g-3 .card .card-body .card-text {
@@ -235,8 +240,8 @@ main .container.secciones .row.g-3 .card .card-body .card-text {
   font-family: 'Dosis', sans-serif;
   line-height: 1.5em;
   letter-spacing: 2px;
-  color: #000;
-  padding: 10px;
+  color: #fff;
+  padding: 5px;
 }
 
 main .container.secciones .row.g-3 .card .card-body .btn-neon {
@@ -249,7 +254,7 @@ main .container.secciones .row.g-3 .card .card-body .btn-neon {
   overflow-y: hidden;
   transition: 0.2s;
   border: none;
-  color: #000;
+  color: #fff;
   background: transparent;
 }
 
@@ -845,5 +850,17 @@ footer .container .footer-container .right-col .contact .btn-footer:hover {
     margin: 0;
     width: 100%;
     margin-top: 20px;
+  }
+}
+
+/* ========================================================================================= */
+/* adaptacion desde 992px */
+@media (min-width: 992px) {
+  .banner {
+    padding: 300px 0;
+    max-height: 39rem;
+  }
+  .banner:before {
+    max-height: 39rem;
   }
 }

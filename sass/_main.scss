@@ -40,15 +40,18 @@ main {
                         }
                     } 
                     .card-body {
+                        height: max-content;
+                        background-color: #000;
                         .card-title {
-                            @include tituloSecundario (#000);
+                            @include tituloSecundario (#fff);
                         }
                         .card-text {
-                            @include parrafo (#000);
-                            padding: 10px;
+                            @include parrafo (#fff);
+                            padding: 5px;
+                         
                         }
                         .btn-neon {
-                            @include boton(#000, transparent);
+                            @include boton(#fff, transparent);
                             &:hover {
                                 background: $colorSecundario;
                                 box-shadow: $sombra-colorSecundario;
