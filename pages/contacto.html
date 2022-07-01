@@ -77,22 +77,22 @@
         <main class="container-fluid">
             <section id="contact-page" class="container d-flex w-100">
                     <div class="container formulario pt-5 pb-5">
-                        <form action="enviar.php" class="form" method="get" enctype="text/plain">
+                        <form action="../form.php" class="form" method="POST" enctype="text/plain">
                             <div class="form__header">
                                 <h2 class="form__title"><strong>Escribinos</strong></h2>
                             </div>
                         
                             <label for="nombre" class="form__label">Nombre:</label> 
-                            <input type="text" class="form__input" id="nombre" placeholder="Ingrese su nombre" required> 
+                            <input type="text" class="form__input" id="nombre" name="nombre" placeholder="Ingrese su nombre" required> 
                                
                             <label for="apellido" class="form__label">Apellido:</label> 
-                            <input type="text" class="form__input" id="apellido" placeholder="Ingrese su apellido" required> 
+                            <input type="text" class="form__input" id="apellido" name="apellido" placeholder="Ingrese su apellido" required> 
                              
                             <label for="email" class="form__label"> Email:</label>
-                            <input type="email" class="form__input"  id="email" placeholder="Ingrese su email" required>
+                            <input type="email" class="form__input"  id="email" name="email" placeholder="Ingrese su email" required>
                         
                             <label for="comentarios" class="form__label"> Mensaje: </label>
-                            <textarea name="Comentarios" class="form__textarea"  id="comentarios" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
+                            <textarea name="Comentarios" class="form__textarea"  id="comentarios" name="mensaje" cols="27" rows="5" placeholder="Deje su mensaje"></textarea>
                           
                             <input type="submit" class="btnSubmit btn-neon" value="Enviar"/>
                         </form> 
@@ -124,7 +124,7 @@
                             <a href="https://www.instagram.com/institutotimestep/?hl=es" target="_blank"><img src="../images/icono_instagram.png" alt="Instagram"></a>
                             <a href="https://www.facebook.com/institutotimestepnazca" target="_blank"> <img src="../images/icono_facebook.png" alt="Facebook"></a>
                             <a href="https://www.youtube.com/channel/UCH3KLVDKkJ139N-vGIj7hWQ" target="_blank"> <img src="../images/icono_youtube.png" alt="Youtube"></a>
-                            <a href="https://api.whatsapp.com/send?phone=012345679" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
+                            <a href="https://api.whatsapp.com/send?phone=5491161875979" target="_blank"><img src="../images/icono_whatsapp.png" alt="WhatsApp"></a>
                         </div>
                         <p class="rights-text">&copy; 2022 - Todos los derechos reservados</p>
                     </div>
@@ -134,7 +134,7 @@
                         <div class="border"></div>
                         <p>Dejanos tu email y no te pierdas las novedades</p>
                         <form action="enviar.php" class="contact">
-                            <input type="email" class="txtb" placeholder="Ingresa tu email" required> 
+                            <input type="email" class="txtb" name="newslettermail" placeholder="Ingresa tu email" required> 
                             <input type="submit" class="btn-footer" value="Enviar">
                         </form>
                     </div>
