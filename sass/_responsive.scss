@@ -44,7 +44,23 @@
                 text-align: center;
             }     
         }   
-    }   
+    } 
+    
+    body {
+        .container-fluid {
+        &.exito {
+        padding: 270px 0;
+        max-height: 39rem; 
+        &:before {
+            max-height: 39rem;
+        }
+        }
+        h1 {
+            font-size: $fontSizeTituloSecundario;
+            margin-top: 40px;  
+        }
+        }
+    }
 }
 
 /* ========================================================================================= */
